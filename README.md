@@ -1,7 +1,7 @@
-# Hitobito wsjrdp2023
+# Hitobito Jamda 2023
 
 This hitobito wagon defines the organization hierarchy with groups and roles
-of the [German Contingent for the Worldscoutjamboree 2023](https://worldscoutjamboree.de) in Korea.
+of the [Austrian Contingent for the Worldscoutjamboree 2023](https://www.jamboree.at) in Korea.
 
 ## Organization Hierarchy
 * Kontingentsteam
