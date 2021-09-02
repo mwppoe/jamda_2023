@@ -3,8 +3,8 @@
 	position: relative;
 	text-indent: -9999px;
 	background: url("../../../images/jamb-logo.png") transparent no-repeat;
-	width: 90px;
-	height: 90px;
+	width: 180px;
+	height: 140px;
 	background-size: contain;
 	background-position: 50% 55%;
 	border-radius: 6px;
@@ -13,15 +13,42 @@
 }
 
 .breadcrumb ul li {
-  text-shadow: 0px 0px #733D8B;
-  color: #733D8B;
+  text-shadow: 0px 0px #E30613;
+  color: #E30613;
 }
 
-.dropdown-menu{ 
-  background-color: #76A5D7;
+.btn-group.open
+.btn.dropdown-toggle {
+  background: $ppoeredDark;
+  color: #fff;
+  border-color: $ppoeredDark;
 }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background: $ppoered;
+}
+
+/* .sheet, #content {
+  border-radius: 6px;
+  color: #FFFFFF;
+} */
+.dropdown-menu.pull-right,
+.dropdown-menu a:hover { 
+  background-color:  #fff;
+}
+
+.dropdown-menu,
+.dropdown-menu a:hover { 
+  background-color:  $ppoeredDark;
+}
+
+
 #page-footer {
   margin-top: 0px;
+  background-color: #e30613;
 }
 
 .sheet.parent .level {
@@ -37,11 +64,78 @@
 }
 
 #page {
-  background: url("../../../images/trees.png") white no-repeat;
+  /*background: url("../../../images/trees.png") white no-repeat;*/
+  background: white no-repeat;
   background-size: 15%;
   background-position: 0% 100%;
 }
 
-.is-logged-out #page-header a {
-  color: #76A5D7;
+.is-logged-out {
+  background-color: #ffffff;
 }
+
+.is-logged-out #page-header a {
+  color: $ppoered;
+}
+
+.btn {
+  color: $ppoered;
+  background-color: $ppoered;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+
+.btn-group.open {
+  background-color: $ppoeredDark;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: $ppoeredDark;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+/*
+a.btn {
+  background-color: $ppoered;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+
+a.btn:hover,
+a.btn:focus {
+  background-color: $ppoeredDark;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+
+
+ .btn-primary {
+  background-color: $ppoered;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: $ppoeredDark;
+  border-bottom-color: $ppoeredDark;
+  border-top-color: $ppoeredDark;
+  border-left-color: $ppoeredDark;
+  border-right-color: $ppoeredDark;
+}
+*/
