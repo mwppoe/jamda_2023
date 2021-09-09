@@ -13,6 +13,7 @@ zeus.json
 .idea
 .rakeTasks
 vendor
+.vscode
 
 # ignore Gemfile.lock for wagons
 Gemfile.lock
