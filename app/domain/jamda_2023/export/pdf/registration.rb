@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
-module Wsjrdp2023
+module Jamda2023
   module Export::Pdf
     module Registration
       class Runner
@@ -26,7 +26,7 @@ module Wsjrdp2023
           sections.each { |section| section.new(pdf, person).render }
 
           # define header & footer variables
-          imagePath = '../hitobito_wsjrdp_2023/app/assets/images/'
+          imagePath = '../hitobito_jamda_2023/app/assets/images/'
 
           pdf.y = 850
           # pdf.page_count = 0
@@ -77,10 +77,10 @@ module Wsjrdp2023
         end
 
         def sections
-          if @person.role_wish == 'Unit Leitung'
+          if @person.role_wish == 'Patrullenbetreuer*in'
             return [Contract, Medicin, DataProcessing, Recommondation, Travel, DataAgreement]
           end
-          if @person.role_wish == 'Kontingentsteam'
+          if @person.role_wish == 'CMT'
             return [Contract, Medicin, DataProcessing, Travel, DataAgreement]
           end
 

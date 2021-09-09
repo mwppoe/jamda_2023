@@ -23,6 +23,9 @@
     #medicine.tab-pane
       = render 'contactable/medicine', f: f
 
+    #buddies.tab-pane
+      = render 'contactable/buddies', f: f      
+
 - if can?(:index_notes, entry)
   = render 'notes/section', create_path: group_person_notes_path(@group, entry)
 

@@ -1,13 +1,14 @@
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 
 
-# Settings relevant for the hitobito_wsjrdp_2023 wagon
+# Settings relevant for the hitobito_jamda_2023 wagon
 # Overrides settings from the main application
 application:
+  name: Jamda
   languages:
     de: Deutsch
 
@@ -18,33 +19,33 @@ application:
 # not the customers.
 # Initially, a password reset token may be mailed from the application
 # to this address to set a password.
-root_email: development@smeky.de
+root_email: jamda@jamboree.at
 
 email:
   # Sender for all emails sent by the application
-  sender: <%= "Deutsches Kontingent zum World Scout Jamboree 2023  <info@worldscoutjamboree.de>" %>
+  sender: <%= "Österreichisches Kontingent zum World Scout Jamboree 2023  <jamboree@jamboree.at>" %>
 
   # If mass emails are sent, this recipient is used in the to field,
   # while the actual recipients go in the bcc field.
-  mass_recipient: <%= "Deutsches Kontingent zum World Scout Jamboree 2023  <info@worldscoutjamboree.de>" %>
+  mass_recipient: <%= "Österreichisches Kontingent zum World Scout Jamboree 2023  <jamboree@jamboree.at>" %>
 
 person:
   roles:
-    - 'Teilnehmende*r'
-    - Unit Leitung
+    - 'Teilnehmer*in'
+    - 'Patrullenbetreuer*in'
     - IST
-    - Kontingentsteam
+    - CMT
 
   status:
     - registriert # Jeder der sich initial eingelogged hat
     - gedruckt # Jeder der alle Pflichfelder ausgefüllt und auf drucken gedrück hat
     - Upload vollständig # Jeder der seine Pflichtdokumente hochgeladen hat
-    - in Überprüfung durch KT # Uploads auf Unterschriften
+    - in Überprüfung durch CMT # Uploads auf Unterschriften
     - Dokumente vollständig überprüft # Jeder der Alle notwendigen dokumente unterschrieben hochgeladen hat
     - Gruppe zugewiesen # Jeder der eine Unit hat
-    - bestätigt durch KT # Jeder der bestätigt Teil einer Unit des Kontingentes ist
-    - in Überprüfung durch UL # In Papierform mit QR Code
-    - bestätigt durch UL # QR Code gescannt und Unterschriften bestätigt
+    - bestätigt durch CMT # Jeder der bestätigt Teil einer Unit des Kontingentes ist
+    - in Überprüfung durch US # In Papierform mit QR Code
+    - bestätigt durch US # QR Code gescannt und Unterschriften bestätigt
     - vollständig # bei Peter angekommen und gescannt
     - Abmeldung Vermerkt # Personen die sich abmelden wollen, bei denen es noch Klärungsbedarf gibt
     - abgemeldet # Alle die nicht mehr am Jamboree Teilnehmen wollen
@@ -52,13 +53,13 @@ person:
 
 addresses:
   imported_countries:
-    - DE
+    - AT
 
 countries:
   prioritized:
-    - DE
-    - CH
     - AT
+    - CH
+    - DE
     - LI
     - FR
     - IT
@@ -67,17 +68,17 @@ phone_number:
   predefined_labels:
     - Festnetz
     - Mobil
-    - Teilnehmende*r
-    - Personensorgeberechtigte*r 1 (Mobil)
-    - Personensorgeberechtigte*r 2 (Mobil)
-    - Personensorgeberechtigte*r 1 (Festnetz)
-    - Personensorgeberechtigte*r 2 (Festnetz)
+    - Teilnehmer*in
+    - Erziehungsberechtigte*r 1 (Mobil)
+    - Erziehungsberechtigte*r 2 (Mobil)
+    - Erziehungsberechtigte*r 1 (Festnetz)
+    - Erziehungsberechtigte*r 2 (Festnetz)
     - Primärer Notfallkontakt
     - Sekundärer Notfallkontakt
     - Arbeit
     - Fax
     - Andere
-  default_country: DE
+  default_country: AT
 
 social_account:
   predefined_labels:
@@ -92,9 +93,9 @@ social_account:
 additional_email:
   predefined_labels:
     - Privat
-    - Teilnehmende*r
-    - Personensorgeberechtigte*r 1
-    - Personensorgeberechtigte*r 2
+    - Teilnehmer*in
+    - Erziehungsberechtigte*r 1
+    - Erziehungsberechtigte*r 2
     - Primärer Notfallkontakt
     - Sekundärer Notfallkontakt
     - Arbeit

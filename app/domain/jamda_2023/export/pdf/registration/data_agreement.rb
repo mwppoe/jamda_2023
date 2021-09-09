@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
-module Wsjrdp2023
+module Jamda2023
   module Export::Pdf::Registration
     class DataAgreement < Section
       def render
@@ -23,7 +23,7 @@ module Wsjrdp2023
         text 'Hinweise zur Datenverarbeitung', size: 14
         pdf.move_down 3.mm
         text 'Diese Datenschutzhinweise gelten für die Verarbeitung personenbezogener Daten der'\
-        + ' Teilnehmer*innen am 25. World Jamboree 2023 durch den rdp.'
+        + ' Teilnehmer*innen am 25. World Jamboree 2023 durch die rdp.'
         pdf.move_down 3.mm
         text 'v1.0 vom 30.07.2021'
         pdf.move_down 3.mm
@@ -65,7 +65,7 @@ module Wsjrdp2023
         pdf.move_down 3.mm
         text '3.1 Einzelne Angehörige von Mitgliedsverbänden, die im Auftrag des rdp in'\
         + ' Planung, Vorbereitung und Durchführung der Veranstaltung einbezogen sind'\
-        + ' (Mitglieder des Kontingentsteams im besondern Systemadministratoren, Unitbetreuer,'\
+        + ' (Mitglieder des CMTs im besondern Systemadministratoren, Unitbetreuer,'\
         + ' Ärzte, Tourenplaner, Logistiker, und die jeweilig verantworlichen Unitleiter*innen'\
         + ' ) erhalten je nach Inhalt ihrer Tätigkeit Zugriff'\
         + ' auf personenbezogene Daten der Teilnehmer*innen, soweit dies für die Erfüllung der'\

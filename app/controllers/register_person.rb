@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
@@ -36,26 +36,26 @@ class RegisterPerson < PersonSeeder
 
   def get_role(role_wish)
     case role_wish
-    when 'Teilnehmende*r'
+    when 'Teilnehmer*in'
       Group::Unit::UnassignedMember
-    when 'Unit Leitung'
+    when 'Patrullenbetreuer*in'
       Group::Unit::UnassignedLeader
     when 'IST'
       Group::Ist::Unassigned
-    when 'Kontingentsteam'
+    when 'CMT'
       Group::Root::Unassigned
     end
   end
 
   def get_group(role_wish)
     case role_wish
-    when 'Teilnehmende*r'
+    when 'Teilnehmer*in'
       Group.find_by(name: 'Ohne Unit')
-    when 'Unit Leitung'
+    when 'Patrullenbetreuer*in'
       Group.find_by(name: 'Ohne Unit')
     when 'IST'
       Group.find_by(name: 'IST')
-    when 'Kontingentsteam'
+    when 'CMT'
       Group.find_by(name: 'Kontingent')
     end
   end

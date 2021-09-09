@@ -1,7 +1,7 @@
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 de:
   activerecord:
@@ -9,40 +9,40 @@ de:
 
       ### GROUP ROOT
       group/root:
-        one: Kontingentsteam
-        other: Kontingentsteam
+        one: CMT
+        other: CMT
 
       ### ROLES ROOT
       group/root/admin:
         one: Admin 
         description: Administratoren verwalten die Applikation.
       group/root/leader:
-        one: Kontingentsleitung
-        description: Kontingentsleitungsmitglieder mit vollem Zugriff z.B. HoC, Finanzen, Orga. 
+        one: HoC
+        description: HoC
       group/root/member:
-        one: Kontingentsteam
-        description: KT Mitglieder sind alle anderen im Kontingentsteam.
+        one: CMT
+        description: CMT Mitglieder.
       group/root/unassigned:
-        one: KT noch nicht zugewiesen
-        description: KT Mitglieder die noch nicht bestätigt wurden.
+        one: CMT noch nicht zugewiesen
+        description: CMT Mitglieder die noch nicht bestätigt wurden.
 
       ### GROUP Unit Support
       group/unit_support:
-        one: Unit Betreuung
-        other: Unit Betreuung
+        one: Unit Support
+        other: Unit Support
 
       ### ROLES Unit Support
       group/unit_support/leader:
-        one: Head Unitbetreuung
-        description: Head Unitbetreuung mit vollem Zugriff auf alle Units. 
+        one: Unit Support Admin
+        description: Unit Support mit vollem Zugriff auf alle Units. 
       group/unit_support/member:
-        one: Unitbetreuung
-        description: Unitbetreuung mit vollem Zugriff auf alle Units.
+        one: Unit Support
+        description: Unit Support mit vollem Zugriff auf alle Units.
 
      ### GROUP IST
       group/ist:
         one: IST 
-        other: ISTs 
+        other: IST
 
       ### ROLES IST
       group/ist/leader:
@@ -53,7 +53,7 @@ de:
         description: International Service Team
       group/ist/unassigned:
         one: IST noch nicht zugewiesen
-        description: IST  Mitglieder die noch nicht bestätigt wurden.
+        description: IST Mitglieder die noch nicht bestätigt wurden.
 
       ### GROUP Unit
       group/unit:
@@ -62,46 +62,57 @@ de:
 
       ### ROLES Unit
       group/unit/leader:
-        one: Unitleitung
-        description: Unitleitung mit vollem Zugriff auf seine Unit. 
+        one: Patrullenbetreuer*in
+        description: Patrullenbetreuer*in mit vollem Zugriff auf seine Unit. 
       group/unit/member:
-        one: Teilnehmende
-        description: Teilnehmende
+        one: Teilnehmer*in
+        description: Teilnehmer*in
       group/unit/unassigned_leader:
-        one: UL noch nicht zugewiesen
-        description: UL Mitglieder die noch nicht bestätigt wurden.
+        one: PB noch nicht zugewiesen
+        description: PB Mitglieder die noch nicht bestätigt wurden.
       group/unit/unassigned_member:
         one: TN noch nicht zugewiesen
-        description: TN  Mitglieder die noch nicht bestätigt wurden.
+        description: TN Mitglieder die noch nicht bestätigt wurden.
     
     attributes:
       person:
         role: Ich möchte mitfahren als
         first_name_dummy: Robert
         last_name_dummy: Baden-Powell
-        email_dummy: robert.baden-powell@worldscoutjamboree.de
+        email_dummy: robert.baden-powell@jamboree.at
         birthday_info: Geburtstag (dd.mm.yyyy)
         birthday_dummy: 22.02.1857
-        nickname: Spitzname / Fahrtenname
+        nickname: Rufname
         nickname_info: Falls du hier einen Namen einträgst, werden wir diesen für Namensschilder und als Ansprache in Mails verwenden
         rdp_association: Verband
-        rdp_association_region: Landesebene, Diözese
+        rdp_association_region: Bundesland
         rdp_association_sub_region: Bezirk, Region
-        rdp_association_group: Stamm, Ortsgruppe
-        rdp_association_number: Mitgliedsnummer
+        rdp_association_group: Pfadfindergruppe
+        rdp_association_number: Scoutcard ID
         additional_information: Weitere Infos zu mir
-        additional_contact_a_info: Personensorgeberechtigte*r 1
+        additional_contact_a_info: Erziehungsberechtige*r 1
         additional_contact_a_info_adult: Primärer Notfallkontakt
         additional_contact_name_a: Vor- und Nachname 
         additional_contact_adress_a: Adresse 
-        additional_contact_b_info: Personensorgeberechtigte*r 2
+        additional_contact_b_info: Erziehungsberechtige*r 2
         additional_contact_b_info_adult: Sekundärer Notfallkontakt
         additional_contact_name_b: Vor- und Nachname 
         additional_contact_adress_b: Adresse 
-        additional_contact_single: Es gibt nur eine sorgeberechtigte Person
+        additional_contact_single: Es gibt nur eine erziehungsberechtigte Person
         additional_contact_address_info: Sofern abweichend von Kontaktdaten Teilnehmer*in
         additional_mail_info: Weitere E-Mail-Adressen und Telefonummern, um bei Fragen, zur Information oder auch bei Notfällen Kontakt aufzunehmen
         additional_mail_help: Mit "Versand" gekennzeichnete Mails werden zusätzlich zur primären Mailadresse benachrichtigt
+        buddies_header: Buddies
+        buddies_info: Hier kannst du bis zu 3 Buddies angeben, mit denen du in einer Unit sein möchstest
+        buddy1_firstname: Buddy 1 Vorname
+        buddy1_lastname: Buddy 1 Nachname
+        buddy1_scoutcard: Buddy 1 Scoutcard
+        buddy2_firstname: Buddy 2 Vorname
+        buddy2_lastname: Buddy 2 Nachname
+        buddy2_scoutcard: Buddy 2 Scoutcard
+        buddy3_firstname: Buddy 3 Vorname
+        buddy3_lastname: Buddy 3 Nachname        
+        buddy3_scoutcard: Buddy 3 Scoutcard
         sepa_header: Kontaktdaten Kontoinhaber*in
         sepa_info: werden für das SEPA Lastschriftmandat und bei Fragen rund um den Zahlungsverkehr verwendet 
         sepa_name: Kontoinhaber*in
@@ -110,8 +121,8 @@ de:
         sepa_iban: IBAN
         sepa_bic: BIC
         sepa_status: Finanzstatus
-        medicine_header: Medizinbogen
-        medicine_info: Damit die Gesundheit der Teilnehmer*innen auch bei medizinischen Notfällen gewährleistet werden kann, müssen die folgenden Fragen wahrheitsgemäß und vollständig beantwortet werden. Der rdp stellt durch technische und organisatorische Maßnahmen sicher, dass der Schutz der nachfolgend erhobenen Gesundheitsdaten gewährleistet wird. Weitere Informationen finden sich in den Hinweisen zur Datenverarbeitung unter 4.4.
+        medicine_header: Gesundheitsdatenblatt
+        medicine_info: Damit die Gesundheit der Teilnehmer*innen auch bei medizinischen Notfällen gewährleistet werden kann, müssen die folgenden Fragen wahrheitsgemäß und vollständig beantwortet werden. Die PPÖ stellen durch technische und organisatorische Maßnahmen sicher, dass der Schutz der nachfolgend erhobenen Gesundheitsdaten gewährleistet wird. Weitere Informationen finden sich in den Hinweisen zur Datenverarbeitung unter 4.4.
         medicine_vaccination: Weitere Schutzimpfungen
         medicine_vaccination_header: Schutzimpfungen
         medicine_vaccination_info: '(z.B. 12/2016 Prorix Mumps Masern Röteln, 04/2019 boostrix Hepatitis B, 05/2019 FSME)' 
@@ -147,6 +158,7 @@ de:
         medicine_case_doctor: Bei lebensbedrohlichen Erkrankungen / Unfällen entscheidet der behandelnde Arzt vor Ort.
         medicine_support: Wie kannst du in Stresssituationen unterstützt werden? 
         medicine_support_info: (Schokolade, Musik, Lieblings-Song, etc)
+        upload_info: Bitte Uploaden.
         upload_info_ready: Vielen Dank für den Upload. Wir überprüfen die hochgeladenen PDFs und geben dir dann Bescheid.
         upload_passport_pdf: Reisepass
         upload_data_processing_pdf: Vereinbarung
@@ -156,14 +168,14 @@ de:
         upload_recommondation_pdf: Empfehlung
         upload_good_conduct_pdf: Nachweis Führungszeugnis
         passport_nationality: Nationalität
-        passport_nationality_info: z.B. Deutsch 
+        passport_nationality_info: z.B. Österreich
         passport_number: Reisepassnummer
         passport_number_info: z.B. C01X00T47
-        passport_germany: Ich besitze einen gültigen deutschen Reisepass
+        passport_austria: Ich besitze einen gültigen österreichischen Reisepass
         passport_valid: Ablaufdatum Reisepass
         passport_valid_help: Für die Einreise nach Südkorea benötigst du einen Reisepass, der zum Zeitpunkt der Einreise noch mindestens drei Monate gültig ist.
         status: Status der Anmeldung
-        unit_keys: Unit Tag
+        unit_keys: Unit Name
         role_wish: Ich möchte mitfahren als 
         motivation: Motivation
         motivation_info: Ich möchte aufs Jamboree fahren, weil ... 
@@ -171,7 +183,7 @@ de:
         languages_spoken_info: z.B. Deutsch (Muttersprache), Englisch (5 Jahre Schule) 
         shirt_size: T-Shirt Größe
         shirt_size_info: z.B. M
-        uniform_size: Tracht- bzw. Klufthemdgröße
+        uniform_size: Uniformgröße
         uniform_size_info: z.B. 38 
         can_swim: Ich kann schwimmen 
         preview_info: Hier kannst du dir ein Vorschau-PDF genererieren, ohne die Anmeldung zu sperren. Dieses bitte nicht zum Upload verwenden. 
@@ -234,9 +246,9 @@ de:
       cmt_documents: Dokumente sind vollständig unterschrieben und inhaltlich korrekt
 
     text:
-      more_info: Die Anmeldung endet am 31.10.2021 mehr Informationen findest du auf unserer
+      more_info: Die Anmeldung endet am 31.12.2021 mehr Informationen findest du auf unserer
       homepage: Homepage
-      homepage_link: https://www.worldscoutjamboree.de/
+      homepage_link: https://www.jamboree.at/
       invalid_adress: Personen mit ungültiger Adresse
       print: Deine Anmeldung wurde schon gedruckt
     
@@ -254,7 +266,7 @@ de:
     additional_email_fields:
       tooltip_mailings: Beim Versand von E-Mails wird zusätzlich an alle hier markierten Adressen im CC verschickt.
     association:
-      placeholder_value: Verbandszugehörigkeit
+      placeholder_value: Gruppenzugehörigkeit
     contact: 
       additional_data: Weitere Angaben
       events: Events
@@ -270,9 +282,10 @@ de:
     form_tabs:
       general: Kontaktdaten Teilnehmer*in
       additional_contact: Weitere Kontaktdaten
-      rdp_association: Verbandszugehörigkeit
+      rdp_association: Gruppenzugehörigkeit
       finance: SEPA
       medicine: Gesundheitsbogen
+      buddies: Buddies      
   global:
     tabs:
       info: Kontaktdaten

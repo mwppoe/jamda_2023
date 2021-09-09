@@ -1,0 +1,568 @@
+development:
+  PPÖ:
+    Burgenland:
+        7000 Eisenstadt:
+        7100 Neusiedl am See:
+        7210 Mattersburg:
+        7350 Oberpullendorf:
+    Kärnten:
+        9020 Klagenfurt 2 - Andreas Hofer:
+        9020 Klagenfurt 5 - Prinz Eugen:
+        9062 Klagenfurt 4 - Moosburg:
+        9300 St. Veit an der Glan:
+        9321 Althofen-Kappel:
+        9360 Friesach:
+        9500 Villach + Gegendtal:
+        9800 Spittal an der Drau - Porcia:
+    Niederösterreich:
+        2000 Stockerau:
+        2020 Hollabrunn:
+        2115 Ernstbrunn:
+        2130 Mistelbach:
+        2136 Laa an der Thaya:
+        2151 Asparn an der Zaya:
+        2225 Zistersdorf:
+        2231 Strasshof:
+        2304 Orth an der Donau:
+        2320 Schwechat:
+        2326 Maria Lanzendorf:
+        2340 Mödling:
+        2344 Maria Enzersdorf-Liechtenstein:
+        2344 Maria Enzersdorf-Südstadt:
+        2345 Brunn am Gebirge:
+        2351 Wiener Neudorf:
+        2352 Gumpoldskirchen:
+        2362 Biedermannsdorf:
+        2371 Hinterbrühl - Johannes von Matha:
+        2380 Perchtoldsdorf:
+        2391 Kaltenleutgeben:
+        2410 Hainburg/Donau - Viribus Unitis:
+        2435 Ebergassing-Wienerherberg:
+        2460 Bruck an der Leitha:
+        2483 Ebreichsdorf:
+        2500 Baden:
+        2540 Bad Vöslau:
+        2540 Bad Vöslau-Gainfarn:
+        2544 Leobersdorf:
+        2560 Berndorf:
+        2603 Felixdorf:
+        2620 Neunkirchen:
+        2640 Gloggnitz:
+        2700 Wiener Neustadt 1:
+        2700 Wiener Neustadt 2:
+        2860 Kirchschlag:
+        2880 Kirchberg am Wechsel:
+        3003 Gablitz:
+        3100 St. Pölten:
+        3107 St. Pölten-Viehofen:
+        3121 Karlstetten:
+        3150 Wilhelmsburg:
+        3153 Eschenau-Rotheau:
+        3180 Lilienfeld:
+        3300 Amstetten - Don Bosco:
+        3313 Wallsee-Sindelburg:
+        3332 Kematen-Gleiß:
+        3340 Waidhofen an der Ybbs:
+        3341 Ybbsitz:
+        3343 Hollenstein an der Ybbs:
+        3361 Aschbach:
+        3363 Ulmerfeld-Hausmening:
+        3380 Pöchlarn:
+        3385 Markersdorf - St. Martin:
+        3400 Kierling-Gugging:
+        3400 Klosterneuburg 1:
+        3411 Klosterneuburg Weidling:
+        3420 Kritzendorf-Höflein:
+        3424 Zeiselmauer-Wolfpassing:
+        3430 Tulln:
+        3433 Königstetten:
+        3452 Atzenbrugg-Heiligeneich:
+        3462 Absdorf:
+        3500 Egelsee:
+        3500 Krems an der Donau:
+        3542 Gföhl:
+        3550 Langenlois:
+        3571 Gars am Kamp:
+        3580 Horn:
+        3910 Zwettl:
+        3950 Gmünd:
+    Oberösterreich:
+        4020 Linz 2 - Zentrum:
+        4020 Linz 6:
+        4030 Linz 4:
+        4030 Linz 5:
+        4030 Linz 8 - Ebelsberg/Pichling:
+        4040 Linz 12 - Urfahr:
+        4050 Traun-Oedt:
+        4060 Leonding:
+        4061 Langholzfeld:
+        4063 Hörsching:
+        4100 Ottensheim:
+        4150 Rohrbach-Berg:
+        4210 Gallneukirchen-Engerwitzdorf:
+        4222 Pfadfinder 4222:
+        4230 Pregarten:
+        4240 Freistadt:
+        4400 Steyr 1:
+        4470 Enns:
+        4563 Kremstal:
+        4594 Steyrtal:
+        4600 Wels:
+        4655 Vorchdorf:
+        4690 Schwanenstadt:
+        4785 Sauwald:
+        4786 Brunnenthal:
+        4810 Gmunden:
+        4820 Bad Ischl:
+        4822 Bad Goisern:
+        4840 Vöcklabruck:
+        4844 Regau:
+        4870 Vöcklamarkt:
+        4910 Ried im Innkreis:
+        4920 Schildorn:
+        5280 Braunau:
+    Salzburg:
+        5020 Salzburg 4 - Mülln:
+        5020 Salzburg 6 - Maxglan:
+        5020 Salzburg 8 - Parsch:
+        5020 Salzburg 9 - Taxham - Richterhöhe:
+        5020 Salzburg 11 - Morzg:
+        5020 Salzburg 2:
+        5023 Salzburg 5 - Gnigl:
+        5081 Anif:
+        5101 Bergheim:
+        5110 Oberndorf:
+        5163 Zellhof:
+        5201 Seekirchen am Wallersee:
+        5204 Straßwalchen:
+        5300 Tennengau - Hallwang:
+        5302 Henndorf:
+        5400 Tennengau - Hallein:
+        5411 Tennengau - Oberalm:
+        5412 Tennengau - Puch:
+        5431 Tennengau - Kuchl:
+        5441 Abtenau:
+        5630 Gastein:
+        5700 Zell am See:
+    Steiermark:
+        8010 Graz 2 - St. Elisabeth:
+        8010 Graz 3 - St. Georg:
+        8010 Graz 11 - St. Paul:
+        8020 Graz 5 - Kalvarienberg:
+        8020 Graz 10 - Don Bosco:
+        8042 Graz 1 - St. Georg:
+        8045 Graz 12 - Andritz:
+        8111 Graz Umgebung Nord:
+        8280 Fürstenfeld:
+        8330 Auersbachtal:
+        8523 Frauental-Rassach:
+        8541 Schwanberg:
+        8665 Langenwang:
+        8700 Leoben:
+        8793 Trofaiach:
+    Tirol:
+        6020 Innsbruck-Allerheiligen:
+        6020 Innsbruck-Hötting:
+        6020 Innsbruck-Pradl:
+        6020 Innsbruck 10:
+        6060 Hall in Tirol:
+        6112 Wattens:
+        6167 Neustift im Stubaital:
+        6170 Zirl:
+        6176 Völs:
+        6200 Jenbach:
+        6370 Kitzbühel:
+        6410 Telfs:
+        6460 Imst:
+        6511 Zams:
+        6600 Reutte:
+        9900 Lienz-Dolomiten:
+        9991 Dölsach-Algund:
+    Vorarlberg:
+        6700 Bludenz - St. Agnes/Hl. Kreuz:
+        6712 Thüringen - St. Stefan:
+        6713 Ludesch - St. Martin:
+        6714 Nüziders - St. Viner:
+        6774 St. Martin Montafon:
+        6800 St. Martin Altenstadt-Levis:
+        6800 Feldkirch - St. Georg:
+        6830 Rankweil:
+        6840 PWA Götzis:
+        6844 Altach:
+        6845 Hohenems:
+        6850 Dornbirn:
+        6861 Alberschwende:
+        6870 Hinterbregenzerwald:
+        6890 Lustenau:
+        6900 Bregenz:
+        6912 Leiblachtal:
+        6922 Wolfurt:
+        6923 Lauterach:
+        6971 Hard - St. Georg:
+        6972 Fußach:
+        6973 Höchst:
+        6992 Kleinwalsertal:
+    Wien:
+        1010 Wien 15 - St. Anna:
+        1010 Wien 16B - Schotten:
+        1010 Wien 16M - Unsere liebe Frau zu den Schotten:
+        1020 Wien 27 - Donaustadt:
+        1020 Wien 51 - Robert Lebner:
+        1030 Wien 6 & 7 - Paxtu:
+        1030 Wien 9 - St. Othmar:
+        1030 Wien 13 - Erdberg:
+        1030 Wien 42 - St. Sebastian:
+        1040 Wien 2M - Hemma von Gurk:
+        1040 Wien 34 - St. Thekla:
+        1040 Wien 41B - Prinz Eugen:
+        1060 Wien 17/47 - MariaHilf:
+        1060 Wien 37 - Christoph Columbus:
+        1070 Wien 18 - Mafeking:
+        1080 Wien 20 - Breitenfeld:
+        1080 Wien 23 - St. Calasanz:
+        1090 Wien 21 - Liechtenstein:
+        1100 Wien 1 - St. Georg:
+        1100 Wien 5 - Berg Karmel:
+        1100 Wien 12 - Erzherzog Johann:
+        1100 Wien 66 - Am Wienerfeld:
+        1110 Wien 3 - St. Hubertus:
+        1110 Wien 71 - Simmering:
+        1110 Wien 73 - Kaiserebersdorf:
+        1120 Wien 10/48 - St. Oswald:
+        1120 Wien 45 - Meidling:
+        1120 Wien 80 - Enzian:
+        1130 Wien 39 - Ober St. Veit:
+        1130 Wien 60 - Hubertus-Christophorus:
+        1140 Wien 19 - Breitensee:
+        1140 Wien 38 - Penzing:
+        1150 Wien 78 - Christ-König:
+        1160 Wien 56/113 - Andreas Hofer:
+        1160 Wien 68/103 - Maria Namen:
+        1160 Wien PFW - Pfadfinderfanfare Wien:
+        1170 Wien 29 - Dornbach:
+        1180 Wien 11 - St. Severin:
+        1180 Wien 26 - St. Gertrud:
+        1190 Wien 58 - Krim:
+        1190 Wien 81 - Glanzing:
+        1190 Wien 83 - Baden Powell:
+        1200 Wien 52 - St. Kapistran:
+        1210 Wien 8 - Pater Haspinger/Guy de Larigaudie:
+        1210 Wien 64 - Don Bosco:
+        1210 Wien 87:
+        1210 Wien 91 - S.M.S. Novara:
+        1220 Wien 14 - Mount Kenya:
+        1220 Wien 22 - Löwe von Aspern:
+        1220 Wien 28 - St. Georg Kagran:
+        1220 Wien 31 - Stadlau:
+        1220 Wien 36 - St. Stanislaus Kostka:
+        1220 Wien 44 - Hirschstetten:
+        1220 Wien 46 - Pater Rudolf Scheidl:
+        1220 Wien 88 - VISG (Vienna International Scout Group):
+        1230 Wien 32 - Pax Hill:
+        1230 Wien 55 - Hugo von Hofmannsthal:
+        1230 Wien 57 - Mauer/St. Georgenberg:  
+  Pfadfinderbund:
+    Burgenland:
+    Kärnten:
+    Niederösterreich:
+    Oberösterreich:
+    Salzburg:
+    Steiermark:
+    Tirol:
+    Vorarlberg:
+    Wien:
+  Andere:
+    Burgenland:
+    Kärnten:
+    Niederösterreich:
+    Oberösterreich:
+    Salzburg:
+    Steiermark:
+    Tirol:
+    Vorarlberg:
+    Wien:
+
+
+production:
+  PPÖ:
+    Burgenland:
+        7000 Eisenstadt:
+        7100 Neusiedl am See:
+        7210 Mattersburg:
+        7350 Oberpullendorf:
+    Kärnten:
+        9020 Klagenfurt 2 - Andreas Hofer:
+        9020 Klagenfurt 5 - Prinz Eugen:
+        9062 Klagenfurt 4 - Moosburg:
+        9300 St. Veit an der Glan:
+        9321 Althofen-Kappel:
+        9360 Friesach:
+        9500 Villach + Gegendtal:
+        9800 Spittal an der Drau - Porcia:
+    Niederösterreich:
+        2000 Stockerau:
+        2020 Hollabrunn:
+        2115 Ernstbrunn:
+        2130 Mistelbach:
+        2136 Laa an der Thaya:
+        2151 Asparn an der Zaya:
+        2225 Zistersdorf:
+        2231 Strasshof:
+        2304 Orth an der Donau:
+        2320 Schwechat:
+        2326 Maria Lanzendorf:
+        2340 Mödling:
+        2344 Maria Enzersdorf-Liechtenstein:
+        2344 Maria Enzersdorf-Südstadt:
+        2345 Brunn am Gebirge:
+        2351 Wiener Neudorf:
+        2352 Gumpoldskirchen:
+        2362 Biedermannsdorf:
+        2371 Hinterbrühl - Johannes von Matha:
+        2380 Perchtoldsdorf:
+        2391 Kaltenleutgeben:
+        2410 Hainburg/Donau - Viribus Unitis:
+        2435 Ebergassing-Wienerherberg:
+        2460 Bruck an der Leitha:
+        2483 Ebreichsdorf:
+        2500 Baden:
+        2540 Bad Vöslau:
+        2540 Bad Vöslau-Gainfarn:
+        2544 Leobersdorf:
+        2560 Berndorf:
+        2603 Felixdorf:
+        2620 Neunkirchen:
+        2640 Gloggnitz:
+        2700 Wiener Neustadt 1:
+        2700 Wiener Neustadt 2:
+        2860 Kirchschlag:
+        2880 Kirchberg am Wechsel:
+        3003 Gablitz:
+        3100 St. Pölten:
+        3107 St. Pölten-Viehofen:
+        3121 Karlstetten:
+        3150 Wilhelmsburg:
+        3153 Eschenau-Rotheau:
+        3180 Lilienfeld:
+        3300 Amstetten - Don Bosco:
+        3313 Wallsee-Sindelburg:
+        3332 Kematen-Gleiß:
+        3340 Waidhofen an der Ybbs:
+        3341 Ybbsitz:
+        3343 Hollenstein an der Ybbs:
+        3361 Aschbach:
+        3363 Ulmerfeld-Hausmening:
+        3380 Pöchlarn:
+        3385 Markersdorf - St. Martin:
+        3400 Kierling-Gugging:
+        3400 Klosterneuburg 1:
+        3411 Klosterneuburg Weidling:
+        3420 Kritzendorf-Höflein:
+        3424 Zeiselmauer-Wolfpassing:
+        3430 Tulln:
+        3433 Königstetten:
+        3452 Atzenbrugg-Heiligeneich:
+        3462 Absdorf:
+        3500 Egelsee:
+        3500 Krems an der Donau:
+        3542 Gföhl:
+        3550 Langenlois:
+        3571 Gars am Kamp:
+        3580 Horn:
+        3910 Zwettl:
+        3950 Gmünd:
+    Oberösterreich:
+        4020 Linz 2 - Zentrum:
+        4020 Linz 6:
+        4030 Linz 4:
+        4030 Linz 5:
+        4030 Linz 8 - Ebelsberg/Pichling:
+        4040 Linz 12 - Urfahr:
+        4050 Traun-Oedt:
+        4060 Leonding:
+        4061 Langholzfeld:
+        4063 Hörsching:
+        4100 Ottensheim:
+        4150 Rohrbach-Berg:
+        4210 Gallneukirchen-Engerwitzdorf:
+        4222 Pfadfinder 4222:
+        4230 Pregarten:
+        4240 Freistadt:
+        4400 Steyr 1:
+        4470 Enns:
+        4563 Kremstal:
+        4594 Steyrtal:
+        4600 Wels:
+        4655 Vorchdorf:
+        4690 Schwanenstadt:
+        4785 Sauwald:
+        4786 Brunnenthal:
+        4810 Gmunden:
+        4820 Bad Ischl:
+        4822 Bad Goisern:
+        4840 Vöcklabruck:
+        4844 Regau:
+        4870 Vöcklamarkt:
+        4910 Ried im Innkreis:
+        4920 Schildorn:
+        5280 Braunau:
+    Salzburg:
+        5020 Salzburg 4 - Mülln:
+        5020 Salzburg 6 - Maxglan:
+        5020 Salzburg 8 - Parsch:
+        5020 Salzburg 9 - Taxham - Richterhöhe:
+        5020 Salzburg 11 - Morzg:
+        5020 Salzburg 2:
+        5023 Salzburg 5 - Gnigl:
+        5081 Anif:
+        5101 Bergheim:
+        5110 Oberndorf:
+        5163 Zellhof:
+        5201 Seekirchen am Wallersee:
+        5204 Straßwalchen:
+        5300 Tennengau - Hallwang:
+        5302 Henndorf:
+        5400 Tennengau - Hallein:
+        5411 Tennengau - Oberalm:
+        5412 Tennengau - Puch:
+        5431 Tennengau - Kuchl:
+        5441 Abtenau:
+        5630 Gastein:
+        5700 Zell am See:
+    Steiermark:
+        8010 Graz 2 - St. Elisabeth:
+        8010 Graz 3 - St. Georg:
+        8010 Graz 11 - St. Paul:
+        8020 Graz 5 - Kalvarienberg:
+        8020 Graz 10 - Don Bosco:
+        8042 Graz 1 - St. Georg:
+        8045 Graz 12 - Andritz:
+        8111 Graz Umgebung Nord:
+        8280 Fürstenfeld:
+        8330 Auersbachtal:
+        8523 Frauental-Rassach:
+        8541 Schwanberg:
+        8665 Langenwang:
+        8700 Leoben:
+        8793 Trofaiach:
+    Tirol:
+        6020 Innsbruck-Allerheiligen:
+        6020 Innsbruck-Hötting:
+        6020 Innsbruck-Pradl:
+        6020 Innsbruck 10:
+        6060 Hall in Tirol:
+        6112 Wattens:
+        6167 Neustift im Stubaital:
+        6170 Zirl:
+        6176 Völs:
+        6200 Jenbach:
+        6370 Kitzbühel:
+        6410 Telfs:
+        6460 Imst:
+        6511 Zams:
+        6600 Reutte:
+        9900 Lienz-Dolomiten:
+        9991 Dölsach-Algund:
+    Vorarlberg:
+        6700 Bludenz - St. Agnes/Hl. Kreuz:
+        6712 Thüringen - St. Stefan:
+        6713 Ludesch - St. Martin:
+        6714 Nüziders - St. Viner:
+        6774 St. Martin Montafon:
+        6800 St. Martin Altenstadt-Levis:
+        6800 Feldkirch - St. Georg:
+        6830 Rankweil:
+        6840 PWA Götzis:
+        6844 Altach:
+        6845 Hohenems:
+        6850 Dornbirn:
+        6861 Alberschwende:
+        6870 Hinterbregenzerwald:
+        6890 Lustenau:
+        6900 Bregenz:
+        6912 Leiblachtal:
+        6922 Wolfurt:
+        6923 Lauterach:
+        6971 Hard - St. Georg:
+        6972 Fußach:
+        6973 Höchst:
+        6992 Kleinwalsertal:
+    Wien:
+        1010 Wien 15 - St. Anna:
+        1010 Wien 16B - Schotten:
+        1010 Wien 16M - Unsere liebe Frau zu den Schotten:
+        1020 Wien 27 - Donaustadt:
+        1020 Wien 51 - Robert Lebner:
+        1030 Wien 6 & 7 - Paxtu:
+        1030 Wien 9 - St. Othmar:
+        1030 Wien 13 - Erdberg:
+        1030 Wien 42 - St. Sebastian:
+        1040 Wien 2M - Hemma von Gurk:
+        1040 Wien 34 - St. Thekla:
+        1040 Wien 41B - Prinz Eugen:
+        1060 Wien 17/47 - MariaHilf:
+        1060 Wien 37 - Christoph Columbus:
+        1070 Wien 18 - Mafeking:
+        1080 Wien 20 - Breitenfeld:
+        1080 Wien 23 - St. Calasanz:
+        1090 Wien 21 - Liechtenstein:
+        1100 Wien 1 - St. Georg:
+        1100 Wien 5 - Berg Karmel:
+        1100 Wien 12 - Erzherzog Johann:
+        1100 Wien 66 - Am Wienerfeld:
+        1110 Wien 3 - St. Hubertus:
+        1110 Wien 71 - Simmering:
+        1110 Wien 73 - Kaiserebersdorf:
+        1120 Wien 10/48 - St. Oswald:
+        1120 Wien 45 - Meidling:
+        1120 Wien 80 - Enzian:
+        1130 Wien 39 - Ober St. Veit:
+        1130 Wien 60 - Hubertus-Christophorus:
+        1140 Wien 19 - Breitensee:
+        1140 Wien 38 - Penzing:
+        1150 Wien 78 - Christ-König:
+        1160 Wien 56/113 - Andreas Hofer:
+        1160 Wien 68/103 - Maria Namen:
+        1160 Wien PFW - Pfadfinderfanfare Wien:
+        1170 Wien 29 - Dornbach:
+        1180 Wien 11 - St. Severin:
+        1180 Wien 26 - St. Gertrud:
+        1190 Wien 58 - Krim:
+        1190 Wien 81 - Glanzing:
+        1190 Wien 83 - Baden Powell:
+        1200 Wien 52 - St. Kapistran:
+        1210 Wien 8 - Pater Haspinger/Guy de Larigaudie:
+        1210 Wien 64 - Don Bosco:
+        1210 Wien 87:
+        1210 Wien 91 - S.M.S. Novara:
+        1220 Wien 14 - Mount Kenya:
+        1220 Wien 22 - Löwe von Aspern:
+        1220 Wien 28 - St. Georg Kagran:
+        1220 Wien 31 - Stadlau:
+        1220 Wien 36 - St. Stanislaus Kostka:
+        1220 Wien 44 - Hirschstetten:
+        1220 Wien 46 - Pater Rudolf Scheidl:
+        1220 Wien 88 - VISG (Vienna International Scout Group):
+        1230 Wien 32 - Pax Hill:
+        1230 Wien 55 - Hugo von Hofmannsthal:
+        1230 Wien 57 - Mauer/St. Georgenberg:  
+  Pfadfinderbund:
+    Burgenland:
+    Kärnten:
+    Niederösterreich:
+    Oberösterreich:
+    Salzburg:
+    Steiermark:
+    Tirol:
+    Vorarlberg:
+    Wien:
+  Andere:
+    Burgenland:
+    Kärnten:
+    Niederösterreich:
+    Oberösterreich:
+    Salzburg:
+    Steiermark:
+    Tirol:
+    Vorarlberg:
+    Wien:

@@ -1,18 +1,17 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
-module Wsjrdp2023
+module Jamda2023
   module PeopleController
     extend ActiveSupport::Concern
     included do
       self.permitted_attrs += [
         :rdp_association,
         :rdp_association_region,
-        :rdp_association_sub_region,
         :rdp_association_group,
         :rdp_association_number,
         :longitude,
@@ -23,6 +22,15 @@ module Wsjrdp2023
         :additional_contact_adress_b,
         :additional_contact_address_info,
         :additional_contact_single,
+        :buddy1_firstname,
+        :buddy1_lastname,
+        :buddy1_scoutcard,
+        :buddy2_firstname,
+        :buddy2_lastname,
+        :buddy2_scoutcard,
+        :buddy3_firstname,
+        :buddy3_lastname,
+        :buddy3_scoutcard,        
         :sepa_name,
         :sepa_address,
         :sepa_mail,
@@ -53,7 +61,7 @@ module Wsjrdp2023
         :upload_good_conduct_pdf,
         :passport_nationality,
         :passport_number,
-        :passport_germany,
+        :passport_austria,
         :passport_valid,
         :status,
         :unit_keys,
@@ -70,7 +78,7 @@ module Wsjrdp2023
       #   GET /entries/1/edit
       def edit(&block)
         @rdp_groups = YAML.load_file(Rails.root.join('' \
-                                    '../hitobito_wsjrdp_2023/config/rdp_groups.yml'))[Rails.env]
+                                    '../hitobito_jamda_2023/config/ppoe_groups.yml'))[Rails.env]
 
         respond_with(entry, &block)
       end

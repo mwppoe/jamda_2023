@@ -38,12 +38,12 @@ $textColor:             $black !default;
 $borderColor:           $grayLight !default;
 
 $pageBackground:        $white;//lighten($green, 5%);
-$contentBackground:     $green;//$grayLight;
+$contentBackground:     $ppoeredDark;
 $footerBackground:      $blue;
 $bodyBackground:        $blue;
 
 $focusColor:            $ppoered;
-$shadowColor:           darken($green, 10%);//darken($pageBackground, 10%);
+$shadowColor:           darken($ppoeredDark, 10%);//darken($pageBackground, 10%);
 $linkColor:             $ppoered !default;
 $linkColorHover:        $ppoered !default;
 

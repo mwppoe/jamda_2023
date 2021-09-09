@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 # rubocop:disable Rails/ApplicationController
 class RegistrationController < ActionController::Base
@@ -62,7 +62,7 @@ class RegistrationController < ActionController::Base
   def check_age
     birthday = params[:birthday].to_date
     role = params[:role]
-    if ['Unit Leitung', 'Teilnehmende*r', 'IST', 'Kontingentsteam'].include?(role)
+    if ['Patrullenbetreuer*in', 'Teilnehmer*in', 'IST', 'CMT'].include?(role)
       if to_old(birthday, role) || to_young(birthday, role)
         return false
       end
@@ -74,7 +74,7 @@ class RegistrationController < ActionController::Base
   end
 
   def to_old(birthday, role)
-    if (role == 'Teilnehmende*r') && (birthday < Date.new(2005, 7, 22))
+    if (role == 'Teilnehmer*in') && (birthday < Date.new(2005, 7, 22))
       flash[:alert] = 'Du bist leider zu alt für diese Rolle.'
       return true
     elsif birthday < Date.new(1920, 1, 1)
@@ -86,10 +86,10 @@ class RegistrationController < ActionController::Base
 
   # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
   def to_young(birthday, role)
-    if (role == 'Teilnehmende*r') && (birthday > Date.new(2009, 7, 31))
+    if (role == 'Teilnehmer*in') && (birthday > Date.new(2009, 7, 31))
       flash[:alert] = 'Du bist leider zu jung für die Teilname am Jamboree.'
       return true
-    elsif (role == 'Unit Leitung') && birthday > Date.new(2004, 4, 1)
+    elsif (role == 'Patrullenbetreuer*in') && birthday > Date.new(2004, 4, 1)
       flash[:alert] = "Als #{params[:role]} musst du mindestens 18 Jahre alt sein."
       return true
     elsif (role == 'IST') && birthday >= Date.new(2005, 7, 22)

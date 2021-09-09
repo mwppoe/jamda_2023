@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
-require 'prawn/qrcode'
+#  https://github.com/mwppoe/jamda_2023.
+#require 'prawn/qrcode'
 require 'digest'
 
-module Wsjrdp2023
+module Jamda2023
   module Export::Pdf::Registration
     class Contract < Section
       include FinanceHelper
 
       # rubocop:disable Metrics/AbcSize,Metrics/MethodLength,Metrics/CyclomaticComplexity
       def render
-        pdf.bounding_box [pdf.bounds.left, pdf.bounds.top], width: pdf.bounds.width do
-          qrcode = RQRCode::QRCode.new(qrcode_content, level: :h, size: 10)
-          pdf.render_qr_code(qrcode, dot: 1.5)
-        end
+ #       pdf.bounding_box [pdf.bounds.left, pdf.bounds.top], width: pdf.bounds.width do
+ #         qrcode = RQRCode::QRCode.new(qrcode_content, level: :h, size: 10)
+ #         pdf.render_qr_code(qrcode, dot: 1.5)
+ #       end
         pdf.y = bounds.height - 60
         bounding_box([0, 230.mm], width: bounds.width, height: bounds.height - 200) do
           font_size(8) do
@@ -62,9 +62,9 @@ module Wsjrdp2023
                                                    inline_format: true })
         end
 
-        if Rails.env.development?
-          text qrcode_content
-        end
+        #if Rails.env.development?
+        #  text qrcode_content
+        #end
 
         pdf.move_down 3.mm
         text 'Was muss ich mit der Anmeldung machen?', size: 12

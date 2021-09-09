@@ -1,0 +1,23 @@
+-#  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
+-#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
+-#  or later. See the COPYING file at the top-level directory or at
+-#  https://github.com/mwppoe/jamda_2023.
+
+%h4
+  = t('activerecord.attributes.person.buddies_header') 
+= t('activerecord.attributes.person.buddies_info')
+%br/ 
+%br/
+= f.labeled_text_field :buddy1_firstname
+= f.labeled_text_field :buddy1_lastname
+= f.labeled_text_field :buddy1_scoutcard
+%br/
+%br/
+= f.labeled_text_field :buddy2_firstname
+= f.labeled_text_field :buddy2_lastname
+= f.labeled_text_field :buddy2_scoutcard
+%br/
+%br/
+= f.labeled_text_field :buddy3_firstname
+= f.labeled_text_field :buddy3_lastname
+= f.labeled_text_field :buddy3_scoutcard
