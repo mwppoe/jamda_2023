@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 
 class StatisticController < ApplicationController
@@ -39,9 +39,9 @@ class StatisticController < ApplicationController
       @ist[day] =
         Person.where(created_at: day.midnight..day.end_of_day, role_wish: 'IST').count
       @tn[day] =
-        Person.where(created_at: day.midnight..day.end_of_day, role_wish: 'Teilnehmende*r').count
+        Person.where(created_at: day.midnight..day.end_of_day, role_wish: 'Teilnehmer*in').count
       @ul[day] =
-        Person.where(created_at: day.midnight..day.end_of_day, role_wish: 'Unit Leitung').count
+        Person.where(created_at: day.midnight..day.end_of_day, role_wish: 'Patrullenbetreuer*in').count
     end
 
     @person_array = [{ name: 'Gesamt', data: @total }, { name: 'Teilnehmer', data: @tn },

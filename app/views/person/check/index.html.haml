@@ -27,10 +27,10 @@
         - if (@person.years.to_i > 18)
           %h5
             = t('activerecord.attributes.person.check_good_conduct_info')
-        - if 'Unit Leitung' == @person.role_wish || 'Kontingentsteam' == @person.role_wish
+        - if 'Patrullenbetreuer*in' == @person.role_wish || 'CMT' == @person.role_wish
           %h5
             = t('activerecord.attributes.person.check_data_processing_info')
-        - if 'Unit Leitung' == @person.role_wish
+        - if 'Patrullenbetreuer*in' == @person.role_wish
           %h5
             = t('activerecord.attributes.person.check_good_recommondation_info')
       

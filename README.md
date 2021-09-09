@@ -4,11 +4,11 @@ This hitobito wagon defines the organization hierarchy with groups and roles
 of the [Austrian Contingent for the Worldscoutjamboree 2023](https://www.jamboree.at) in Korea.
 
 ## Organization Hierarchy
-* Kontingentsteam
-  * Kontingentsteam
+* CMT
+  * CMT
     * Admin: [:layer_and_below_full, :admin]
     * Kontingentsleitung: [:layer_and_below_full]
-    * Kontingentsteam: []
+    * CMT: []
     * KT Unassigned: []
 * IST
   * IST

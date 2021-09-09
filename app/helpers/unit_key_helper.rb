@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 
 module UnitKeyHelper
@@ -28,11 +28,11 @@ module UnitKeyHelper
     # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
     def plants_yaml
-      YAML.load_file(Rails.root.join('../hitobito_wsjrdp_2023/config/plants.yml')) # [Rails.env]
+      YAML.load_file(Rails.root.join('../hitobito_jamda_2023/config/plants.yml')) # [Rails.env]
     end
 
     def find_participant_by_key(key)
-      key_persons = Person.where(role_wish: 'Teilnehmende*r').where(unit_keys: key)
+      key_persons = Person.where(role_wish: 'Teilnehmer*in').where(unit_keys: key)
       unless key_persons.empty?
         check_key_persons(key_persons)
         key_person = key_persons[0]
@@ -42,7 +42,7 @@ module UnitKeyHelper
     end
 
     def find_unit_leader(person)
-      key_persons = Person.where(role_wish: 'Unit Leitung').where('unit_keys like ?',
+      key_persons = Person.where(role_wish: 'Patrullenbetreuer*in').where('unit_keys like ?',
                                                                   "%#{person.unit_keys}%")
 
       unless key_persons.empty?

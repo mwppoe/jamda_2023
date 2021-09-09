@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 class Person::UploadController < ApplicationController
   before_action :authorize_action
@@ -141,13 +141,13 @@ class Person::UploadController < ApplicationController
   end
 
   def participant_complete
-    @person.role_wish == 'Teilnehmende*r' &&
+    @person.role_wish == 'Teilnehmer*in' &&
     standard_documents_complete &&
     @person.status == 'gedruckt'
   end
 
   def unit_leader_complete
-    @person.role_wish == 'Unit Leitung' &&
+    @person.role_wish == 'Patrullenbetreuer*in' &&
     standard_documents_complete
     @person.upload_recommondation_pdf.present? &&
     @person.upload_good_conduct_pdf.present? &&
@@ -156,7 +156,7 @@ class Person::UploadController < ApplicationController
   end
 
   def cmt_complete
-    @person.role_wish == 'Kontingentsteam' &&
+    @person.role_wish == 'CMT' &&
     standard_documents_complete &&
     @person.upload_good_conduct_pdf.present? &&
     @person.upload_data_processing_pdf.present? &&

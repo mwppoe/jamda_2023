@@ -1,7 +1,7 @@
 -#  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
--#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+-#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 -#  or later. See the COPYING file at the top-level directory or at
--#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+-#  https://github.com/mwppoe/jamda_2023.
 
 %article.col-lg
   %article.span5
@@ -14,11 +14,11 @@
       %h2= Person.human_attribute_name(:motivation)
       = auto_link(simple_format(entry.motivation))
 
-    - if @person.role_wish == "Unit Leitung" && @person.unit_keys.present?
+    - if @person.role_wish == "Patrullenbetreuer*in" && @person.unit_keys.present?
       %h3= "Durch Unit Tags zugeordnete Teilnehmer*innen"
       = participant_list(@person)
       %br
-    - if @person.role_wish == "Teilnehmende*r" && @person.unit_keys.present?
+    - if @person.role_wish == "Teilnehmer*in" && @person.unit_keys.present?
       %h3= "Wunsch Unit Leiter*in"
       = find_unit_leader(@person)
 
@@ -40,7 +40,7 @@
                           :sepa_status)
     = render_attrs(entry, :passport_nationality,
                           :passport_number,
-                          :passport_germany,
+                          :passport_austria,
                           :passport_valid)
     = render_attrs(entry, :languages_spoken,
                           :shirt_size,

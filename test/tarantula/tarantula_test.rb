@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 #  Copyright (c) 2012-2021, German Contingent for the Worldscoutjamboree 2023. This file is part of
-#  hitobito_wsjrdp_2023 and licensed under the Affero General Public License version 3
+#  hitobito_jamda_2023 and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_wsjrdp_2023.
+#  https://github.com/mwppoe/jamda_2023.
 
 
 require 'test_helper'
@@ -41,11 +41,11 @@ class TarantulaTest < ActionDispatch::IntegrationTest
   
   private
   
-  def configure_urls_with_hitobito_wsjrdp_2023(t, person)
-    configure_urls_without_hitobito_wsjrdp_2023(t, person)
+  def configure_urls_with_hitobito_jamda_2023(t, person)
+    configure_urls_without_hitobito_jamda_2023(t, person)
 
     # Wagon specific urls configuration here
   end
-  alias_method_chain :configure_urls, :hitobito_wsjrdp_2023
+  alias_method_chain :configure_urls, :hitobito_jamda_2023
 
 end
