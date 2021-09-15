@@ -63,8 +63,8 @@ class MapController < ApplicationController
     rest_response = geodata_response(address)
 
     if rest_response['status'] == 'OK'
-      person.latitude = rest_response['results'][0]['geometry']['location']['lat'].to_s
-      person.longitude = rest_response['results'][0]['geometry']['location']['lng'].to_s
+    #  person.latitude = rest_response['results'][0]['geometry']['location']['lat'].to_s
+    #  person.longitude = rest_response['results'][0]['geometry']['location']['lng'].to_s
       person.save
     end
     person

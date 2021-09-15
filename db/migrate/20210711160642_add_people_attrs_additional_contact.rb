@@ -7,10 +7,19 @@
 
 class AddPeopleAttrsAdditionalContact < ActiveRecord::Migration[4.2]
     def change
-      add_column :people, :additional_contact_name_a, :string
+      add_column :people, :additional_contact_name_a, :string, :limit => 64
       add_column :people, :additional_contact_adress_a, :string
-      add_column :people, :additional_contact_name_b, :string
+      add_column :people, :additional_contact_phone_a, :string, :limit => 32
+      add_column :people, :additional_contact_email_a, :string, :limit => 64
+      add_column :people, :additional_contact_whatsapp_a, :boolean
+      add_column :people, :additional_contact_relationship_a, :string, :limit => 32
+      add_column :people, :additional_contact_relationship_b, :string, :limit => 32
+      add_column :people, :additional_contact_name_b, :string, :limit => 64
       add_column :people, :additional_contact_adress_b, :string
+      add_column :people, :additional_contact_phone_b, :string,  :limit => 32
+      add_column :people, :additional_contact_email_b, :string, :limit => 64
+      add_column :people, :additional_contact_whatsapp_b, :boolean
       add_column :people, :additional_contact_single, :boolean
     end
 end
+

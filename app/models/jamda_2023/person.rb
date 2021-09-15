@@ -16,7 +16,7 @@ module Jamda2023::Person
 
     Person::PUBLIC_ATTRS << :rdp_association << :rdp_association_region 
     Person::PUBLIC_ATTRS << :rdp_association_group
-    Person::PUBLIC_ATTRS << :rdp_association_number << :longitude << :latitude
+    Person::PUBLIC_ATTRS << :rdp_association_number
 
     Person::FILTER_ATTRS << :status << :role_wish << :passport_austria << :passport_valid
     Person::FILTER_ATTRS << :rdp_association << :rdp_association_region 

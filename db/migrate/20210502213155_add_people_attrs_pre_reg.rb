@@ -7,11 +7,9 @@
 
 class AddPeopleAttrsPreReg < ActiveRecord::Migration[4.2]
     def change
-      add_column :people, :rdp_association, :string
-      add_column :people, :rdp_association_region, :string
-      add_column :people, :rdp_association_group, :string
-      add_column :people, :rdp_association_number, :string
-      add_column :people, :longitude, :string
-      add_column :people, :latitude, :string
+      add_column :people, :rdp_association, :string, :limit => 32
+      add_column :people, :rdp_association_region, :string, :limit => 32
+      add_column :people, :rdp_association_group, :string,  :limit => 128
+      add_column :people, :rdp_association_number, :string, :limit => 20
     end
 end

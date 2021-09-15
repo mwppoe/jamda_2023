@@ -21,66 +21,43 @@ module Jamda2023
       def list
         pdf.start_new_page
         pdf.move_down 3.mm
-        text 'Was muss ich mit dieser Vertraulichkeitsvereinbarung machen?', size: 12
-        text 'Die Vertraulichkeitsvereinbarung muss'
+        text 'Was muss ich mit dieser Verpflichtungserklärung machen?', size: 12
+        text 'Die Verpflichtungserklärung muss'
         text '1. vollständig unterschrieben werden'
-        text '2. auf anmeldung.worldscoutjamboree.de unter'\
-        + ' "Upload>Vertraulichkeitsvereinbarung hochladen" hochgeladen werden'
+        text '2. auf jamda.jamboree.at unter'\
+        + ' "Upload>Verpflichtungserklärung hochladen" hochgeladen werden'
         pdf.move_down 3.mm
         pdf.stroke_horizontal_rule
 
         pdf.move_down 3.mm
-        text 'Vertraulichkeitsvereinbarung', size: 14
+        text 'Verpflichtungserklärung zum Datengeheimnis', size: 14
         pdf.move_down 3.mm
-        text 'Zwischen dem Ring deutscher Pfadfinder*innenverbände e.V. (im Folgenden rdp) '
-        pdf.move_down 1.mm
-        text 'und'
-        pdf.move_down 1.mm
-        text "#{@person.full_name}, im Folgenden Mitarbeitende*r"
+        text 'Ich verpflichte mich, das Datengeheimnis gemäß § 15 Datenschutzgesetz in der geltenden Fassung zu wahren und den Datenschutz und die Datensicherheit unabhängig davon, ob sich um gesetzliche Verpflichtungen oder um interne Anordnungen handelt, einzuhalten.'
         pdf.move_down 3.mm
+        text 'Mir ist bekannt, '
+        pdf.move_down 1.mm
+        text '- dass es untersagt ist, unbefugten Personen oder unzuständigen Stellen personenbezogene Daten (Name, Geburtsdatum, Adresse, Telefonnummer) mitzuteilen oder ihnen die Kenntnisnahme zu ermöglichen, sowie Daten zu einem anderen als dem zum jeweiligen Aufgabenvollzug gehörenden Zweck zu verwenden,'
+        pdf.move_down 1.mm
+        text '- dass automationsunterstützt verarbeitete Daten, die mir auf Grund meiner Funktion anvertraut wurden oder zugänglich geworden sind, unbeschadet sonstiger Verschwiegenheitspflichten, nur auf Grund einer ausdrücklichen mündlichen oder schriftlichen Anordnung durch das Präsidium weitergegeben werden dürfen.'
+        pdf.move_down 1.mm
+        text '- dass diese Verpflichtung auch nach Beendigung meiner Tätigkeit und / oder nach dem Ausscheiden aus dem Bundesverband fortbesteht,'
+        pdf.move_down 1.mm
+        text '- dass weiterreichende andere Bestimmungen über die Geheimhaltungspflichten von der oben angeführten Verpflichtung unberührt bleiben, sofern sie mit dem Datenschutzgesetz nicht im Widerspruch stehen,'
+        pdf.move_down 1.mm
+        text '- dass Verstöße gegen die oben angeführte Verpflichtung mit Freiheits- oder Geldstrafen geahndet werden können und schadenersatzpflichtig machen können.'
+        pdf.move_down 3.mm
+        text 'Zusätzliche Erklärung:'
+        pdf.move_down 3.mm
+        text 'Im Besonderen verpflichte ich mich zur sorgfältigen Verwahrung mir anvertrauter Benutzerkennwörter, Passwörter und sonstiger Zugangsberechtigungen.'
 
-
-        text 'Im Rahmen der Tätigkeit für das Deutsche Kontingent zum World Scout Jamboree'\
-        + ' verarbeitet der/die Mitarbeitende auf Weisung des rdp e.V. personenbezogene Daten.'
-        pdf.move_down 1.mm
-        text 'Die einschlägigen gesetzlichen Vorschriften verlangen, dass personenbezogene'\
-        + ' Daten so verarbeitet werden, dass die Rechte der durch die Verarbeitung'\
-        + ' betroffenen Personen auf Vertraulichkeit und Integrität ihrer Daten gewährleistet'\
-        + ' werden. Daher ist es dem/der Mitarbeitende*n nur gestattet, personenbezogene'\
-        + ' Daten in dem Umfang und in der Weise zu verarbeiten, wie es zur Erfüllung der'\
-        + ' Aufgaben des/der Mitarbeitenden im rdp e.V. erforderlich ist.'\
-        + ' Die zugänglich gemachten personenbezogenen'\
-        + ' Daten dürfen ausschließlich für die Durchführung der Veranstaltung verwendet werden. '
-        pdf.move_down 1.mm
-        text 'Nach diesen Vorschriften ist es untersagt, personenbezogene Daten unbefugt'\
-        + ' oder unrechtmäßig zu verarbeiten oder absichtlich oder unabsichtlich die'\
-        + ' Sicherheit der Verarbeitung in einer Weise zu verletzen, die zur Vernichtung,'\
-        + ' zum Verlust, zur Veränderung, zur unbefugter Offenlegung oder unbefugtem'\
-        + ' Zugang führt. '
-        pdf.move_down 1.mm
-        text 'Verstöße gegen die Datenschutzvorschriften können ggf. mit Geldbuße,'\
-        + ' Geldstrafe oder Freiheitsstrafe geahndet werden. Entsteht der betroffenen'\
-        + ' Person durch die unzulässige Verarbeitung ihrer personenbezogenen Daten'\
-        + ' ein materieller oder immaterieller Schaden, kann ein Schadenersatzanspruch'\
-        + ' entstehen. '
-        pdf.move_down 1.mm
-        text 'Die Verpflichtung auf die Vertraulichkeit besteht auch nach der'\
-        + ' Beendigung der Tätigkeit für den rdp e.V. fort. '
-        pdf.move_down 1.mm
-        text 'Im Rahmen der Tätigkeit unterliegt die/der Mitarbeitende den'\
-        + ' Weisungen des rdp e.V. Diese Vereinbarung wird auch ohne Unterschrift'\
-        + ' durch den rdp e.V. mit Unterzeichnung durch den/die Mitarbeitende*n wirksam.'
-        pdf.move_down 1.mm
-        text 'Ich, ' + @person.full_name + ' erkläre, in Bezug auf die Vertraulichkeit und'\
-        + ' Integrität personenbezogener Daten die Vorgaben der geltenden'\
-        + ' Datenschutzvorschriften einzuhalten.'
+ 
 
         pdf.move_down 3.mm
         pdf.make_table([
                          [{ content: @person.town + ' den ' \
                           + Time.zone.today.strftime('%d.%m.%Y'), height: 30 }],
                          ['______________________________', ''],
-                         [{ content: @person.full_name, height: 30 }, '']
+                         [{ content: @person.full_name + ', ' + @person.address + ', ' + @person.zip_code + ' ' + @person.town, height: 30 }, '']
                        ],
                        cell_style: { width: 240, padding: 1, border_width: 0,
                                      inline_format: true }).draw

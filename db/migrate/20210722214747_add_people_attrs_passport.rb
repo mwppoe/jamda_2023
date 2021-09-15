@@ -8,7 +8,7 @@
 class AddPeopleAttrsPassport < ActiveRecord::Migration[4.2]
     def change
       add_column :people, :passport_nationality, :string
-      add_column :people, :passport_number, :string
+      add_column :people, :passport_number, :string, :limit => 32
       add_column :people, :passport_austria, :boolean
       add_column :people, :passport_valid, :date
     end

@@ -4,32 +4,62 @@
 -#  https://github.com/mwppoe/jamda_2023.
 
 %h4
-  = t('activerecord.attributes.person.medicine_header') 
+  = t('activerecord.attributes.person.medicine_header_de') 
 = t('activerecord.attributes.person.medicine_info')
 %br/ 
+
+%br
+%h4 
+  = t('activerecord.attributes.person.medicine_general')
+%br 
+
+= f.labeled_input_field :medicine_social_number
+= f.labeled_input_field :medicine_social_joined
+= f.labeled_input_field :medicine_social_joined_number
+= f.labeled_input_field :size
+= f.labeled_input_field :weight
+= f.labeled_input_field :medicine_bloodtype
+= f.labeled_input_field :can_swim
+
+%br
+%h4 
+  = t('activerecord.attributes.person.medicine_vaccination_header')
+%br 
+
+= f.labeled_input_field :medicine_vaccination_tetanus
+= f.labeled_input_field :medicine_vaccination_tetanus_date
+= f.labeled_input_field :medicine_vaccination_fsme
+= f.labeled_input_field :medicine_vaccination_fsme_date
+= f.labeled_input_field :medicine_vaccination_masern
+= f.labeled_input_field :medicine_vaccination_masern_date
+= f.labeled_input_field :medicine_vaccination_meningokokken
+= f.labeled_input_field :medicine_vaccination_meningokokken_date
+= f.labeled_input_field :medicine_vaccination_hepatitisa
+= f.labeled_input_field :medicine_vaccination_hepatitisa_date
+= f.labeled_input_field :medicine_vaccination_hepatitisb
+= f.labeled_input_field :medicine_vaccination_hepatitisb_date
+= f.labeled_input_field :medicine_vaccination_covid19
+= f.labeled_input_field :medicine_vaccination_covid19_date
+= f.labeled_input_field :medicine_vaccination
 %br/
-= f.labeled_input_field :medicine_stiko_vaccination, help: (link_to t('activerecord.attributes.person.medicine_bmi_info'), t('activerecord.attributes.person.medicine_bmi_info_link'), target: '_blank')
-= link_to t('activerecord.attributes.person.medicine_stiko_info'), t('activerecord.attributes.person.medicine_stiko_info_link'), target: '_blank'
-= f.labeled_input_field :medicine_vaccination, placeholder: t('activerecord.attributes.person.medicine_vaccination_info')
-= t('activerecord.attributes.person.medicine_vaccination_help')
-%br/
+
+%br
+%h4
+  = t('activerecord.attributes.person.medicine_general_2')
+%br 
+
 %br/
 = f.labeled_input_field :medicine_abnormalities, placeholder: t('activerecord.attributes.person.medicine_abnormalities_info')
 = f.labeled_input_field :medicine_preexisting_conditions
 = f.labeled_input_field :medicine_allergies, placeholder: t('activerecord.attributes.person.medicine_allergies_info')
 = f.labeled_input_field :medicine_eating_disorders
 = f.labeled_input_field :medicine_mobility_needs, placeholder: t('activerecord.attributes.person.medicine_mobility_needs_info')
-= f.labeled_input_field :medicine_infectious_diseases
-= f.labeled_input_field :medicine_medical_treatment_contact, placeholder: t('activerecord.attributes.person.medicine_medical_treatment_contact_info')
-= t('activerecord.attributes.person.medicine_medical_treatment_contact_help')
-%br/
-%br/
 = f.labeled_input_field :medicine_continous_medication, placeholder: t('activerecord.attributes.person.medicine_continous_medication_info')
 = f.labeled_input_field :medicine_needs_medication, placeholder: t('activerecord.attributes.person.medicine_needs_medication_info')
-= t('activerecord.attributes.person.medicine_medication_help')
-%br/
-%br/
-= f.labeled_input_field :medicine_medications_self_treatment
 = f.labeled_input_field :medicine_other, placeholder: t('activerecord.attributes.person.medicine_other_info')
--# = f.labeled_input_field :medicine_important
+= f.labeled_input_field :medicine_therapies
 = f.labeled_input_field :medicine_support, placeholder: t('activerecord.attributes.person.medicine_support_info')
+= f.labeled_input_field :medicine_important
+%br
+%br
+= f.labeled_input_field :medicine_filled

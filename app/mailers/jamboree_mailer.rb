@@ -6,5 +6,5 @@
 #  https://github.com/mwppoe/jamda_2023.
 
 class JamboreeMailer < ActionMailer::Base
-  default from: 'info@worldscoutjamboree.de'
+  default from: 'jamda@jamboree.at'
 end

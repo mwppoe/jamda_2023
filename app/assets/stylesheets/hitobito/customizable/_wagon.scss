@@ -60,7 +60,7 @@
 }
 
 #page-header > a {
-  color: #76A5D7;
+  color: $ppoered;
 }
 
 #page {
@@ -68,6 +68,10 @@
   background: white no-repeat;
   background-size: 15%;
   background-position: 0% 100%;
+}
+
+a.breadcrumb  {
+  color: $white;
 }
 
 .is-logged-out {

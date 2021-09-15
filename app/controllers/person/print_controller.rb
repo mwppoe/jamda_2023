@@ -61,12 +61,9 @@ class Person::PrintController < ApplicationController
     @person.country.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.country')
     @person.gender.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.gender')
     @person.birthday.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.birthday')
-    @person.rdp_association_number.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.rdp_association_number')
+    @person.rdp_association_number.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.rdp_association_number') + " (im Tab Gruppenzugehörigkeit)"
     if @person.years.to_i < 18
-      @person.additional_contact_name_a.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.additional_contact_name_a')
-      unless @person.additional_contact_single
-        @person.additional_contact_name_b.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.additional_contact_name_b')
-      end
+      @person.additional_contact_name_a.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.additional_contact_name_a') + " Erziehungsberechtigte*r (im Tab Weitere Kontaktdaten)"
     end
     #@person.sepa_name.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_name')
     #@person.sepa_address.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_address')
@@ -74,7 +71,7 @@ class Person::PrintController < ApplicationController
     #@person.sepa_iban.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.sepa_iban')
     @person.role_wish.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.role_wish')
     @person.shirt_size.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.shirt_size')
-    @person.uniform_size.present? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.uniform_size')
+    @person.medicine_filled? ? '' : reason += "\n - " + (I18n.t 'activerecord.attributes.person.medicine_filled')
 
     reason += to_old(@person.birthday, @person.role_wish)
     reason += to_young(@person.birthday, @person.role_wish)

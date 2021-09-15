@@ -74,9 +74,6 @@ class Person::UploadController < ApplicationController
     unless params[:person].nil?
       upload_file(params[:person][:upload_passport_pdf], 'upload_passport_pdf')
       upload_file(params[:person][:upload_registration_pdf], 'upload_registration_pdf')
-      upload_file(params[:person][:upload_sepa_pdf], 'upload_sepa_pdf')
-      upload_file(params[:person][:upload_recommondation_pdf], 'upload_recommondation_pdf')
-      upload_file(params[:person][:upload_good_conduct_pdf], 'upload_good_conduct_pdf')
       upload_file(params[:person][:upload_data_processing_pdf], 'upload_data_processing_pdf')
     end
   end
@@ -136,8 +133,7 @@ class Person::UploadController < ApplicationController
 
   def standard_documents_complete
     @person.upload_passport_pdf.present? &&
-    @person.upload_registration_pdf.present? &&
-    @person.upload_sepa_pdf.present?
+    @person.upload_registration_pdf.present?
   end
 
   def participant_complete
@@ -149,8 +145,6 @@ class Person::UploadController < ApplicationController
   def unit_leader_complete
     @person.role_wish == 'Patrullenbetreuer*in' &&
     standard_documents_complete
-    @person.upload_recommondation_pdf.present? &&
-    @person.upload_good_conduct_pdf.present? &&
     @person.upload_data_processing_pdf.present? &&
     @person.status == 'gedruckt'
   end
@@ -158,7 +152,6 @@ class Person::UploadController < ApplicationController
   def cmt_complete
     @person.role_wish == 'CMT' &&
     standard_documents_complete &&
-    @person.upload_good_conduct_pdf.present? &&
     @person.upload_data_processing_pdf.present? &&
     @person.status == 'gedruckt'
   end

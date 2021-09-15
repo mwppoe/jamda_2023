@@ -20,6 +20,10 @@
   = render 'email_field', f: f
 
 = field_set_tag do
+  = f.labeled_input_field :phone
+
+
+= field_set_tag do
   = f.labeled_input_field :languages_spoken, placeholder: t('activerecord.attributes.person.languages_spoken_info')
 
 = field_set_tag do
@@ -30,17 +34,10 @@
 
 = field_set_tag do 
   = f.labeled_input_field :shirt_size, placeholder: t('activerecord.attributes.person.shirt_size_info')
-  = f.labeled_input_field :uniform_size, placeholder: t('activerecord.attributes.person.uniform_size_info')
 
 = field_set_tag do
   = f.labeled_inline_fields_for :social_accounts, 'contactable/social_account_fields'
 
-= field_set_tag do
-  = f.labeled_input_field :can_swim
 
-= field_set_tag do
-  = f.labeled_input_field :motivation, placeholder: t('activerecord.attributes.person.motivation_info')
-  = f.labeled_input_field :additional_information
-  = render 'picture_fields', f: f
 
 
