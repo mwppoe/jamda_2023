@@ -39,8 +39,8 @@ $borderColor:           $grayLight !default;
 
 $pageBackground:        $white;//lighten($green, 5%);
 $contentBackground:     $ppoeredDark;
-$footerBackground:      $blue;
-$bodyBackground:        $blue;
+$footerBackground:      $white;
+$bodyBackground:        $white;
 
 $focusColor:            $ppoered;
 $shadowColor:           darken($ppoeredDark, 10%);//darken($pageBackground, 10%);

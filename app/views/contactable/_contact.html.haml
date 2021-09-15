@@ -6,14 +6,7 @@
 %article.col-lg
   %article.span5
     = render 'contact_data', person: entry, only_public: cannot?(:show_details, entry)
-    - if entry.additional_information?
-      %h2= Person.human_attribute_name(:additional_information)
-      = auto_link(simple_format(entry.additional_information))
-
-    - if entry.motivation?
-      %h2= Person.human_attribute_name(:motivation)
-      = auto_link(simple_format(entry.motivation))
-
+ 
     - if @person.role_wish == "Patrullenbetreuer*in" && @person.unit_keys.present?
       %h3= "Durch Unit Tags zugeordnete Teilnehmer*innen"
       = participant_list(@person)
@@ -33,19 +26,16 @@
         = render_attrs(entry, :created_info, :updated_info)
     
 
-    = render 'people_relations'
+    = render_attrs(entry, :phone)
 
     = render_attrs(entry, :status,
-                          :role_wish,
-                          :sepa_status)
+                          :role_wish)
     = render_attrs(entry, :passport_nationality,
                           :passport_number,
                           :passport_austria,
                           :passport_valid)
     = render_attrs(entry, :languages_spoken,
-                          :shirt_size,
-                          :uniform_size,
-                          :can_swim)
+                          :shirt_size)
     = render_extensions :show_left
 
     

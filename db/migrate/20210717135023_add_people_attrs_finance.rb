@@ -7,11 +7,11 @@
 
 class AddPeopleAttrsFinance < ActiveRecord::Migration[4.2]
     def change
-      add_column :people, :sepa_name, :string
-      add_column :people, :sepa_address, :string
-      add_column :people, :sepa_mail, :string
-      add_column :people, :sepa_iban, :string
-      add_column :people, :sepa_bic, :string
-      add_column :people, :sepa_status, :string
+      #add_column :people, :sepa_name, :string
+      #add_column :people, :sepa_address, :string
+      #add_column :people, :sepa_mail, :string
+      #add_column :people, :sepa_iban, :string
+      #add_column :people, :sepa_bic, :string
+      #add_column :people, :sepa_status, :string
     end
 end

@@ -1,17 +1,27 @@
-%p Hallo #{@resource.first_name},
+%p Hallo #{@resource.first_name}!
 
-%p du hast den ersten Schritt zur Anmeldung als #{@resource.role_wish} für das deutsche Kontingent zum World Scout Jamboree 2023 in Korea gemacht.
+%p Wir freuen uns, dass du als #{@resource.role_wish} ein Teil des österreichischen Kontingents am Jamboree 2023 in Südkorea sein möchtest. 
 
 %p Für deine Anmeldung benötigen wir noch ein paar mehr Daten, dafür musst du in der Registrierung unter Kontaktdaten auf "Bearbeiten" klicken und alle Felder ausfüllen. 
 Nachdem du alle Daten sorgfältig ausgefüllt hast, kannst du unter "Anmeldung Drucken" ein PDF generieren und für die Unterschriften ausdrucken. 
-Um deine Anmeldung abzuschließen, musst du die unterschriebenen Seiten unter "Upload" wieder hochladen. 
+%p Danach musst du die unterschriebenen Seiten unter "Upload" wieder hochladen. 
 
-%p Eine genaue Anleitung findest du unter #{link_to "HowTo Anmeldung", "https://www.worldscoutjamboree.de/howto-anmeldung/"}.
+%p Um deine Anmeldung abzuschließen, führe bitte folgende Schritte durch: 
+%p - Lege ein Passwort fest, um dich auf der Anmeldeplattform anzumelden: #{link_to "Passwort initial setzen.", edit_password_url(@resource, reset_password_token: @token)}
+%p - Fülle alle Daten in der Anmeldeplattform aus. Um die Felder zu bearbeiten, klicke unter “Kontaktdaten” auf “Bearbeiten”. 
+%p - Nachdem du alle Daten sorgfältig ausgefüllt hast, kannst du unter “Anmeldung Drucken” ein PDF generieren. 
+%p - Unterschreibe das PDF und lade das unterschriebene Dokument als PDF unter “Upload” wieder hoch. 
+%p - Überweise die erste Rate. Nur mit der ersten Teilzahlung ist deine Anmeldung verbindlich! Den für dich als (#{@resource.role_wish} ) gültigen Zahlungsplan findest du in deinem Anmeldungs-PDF)
 
-%p Bitte lege zuerst dein Passwort fest und stelle danach deine Anmeldung hier fertig: #{link_to "Passwort initial setzen.", edit_password_url(@resource, reset_password_token: @token)}
+%p Eine genaue Anleitung findest du unter: #{link_to "HowTo Anmeldung", "https://jamda.jamboree.at/howto-anmeldung/"}.
 
-%p Alle weiteren Mails von uns wirst du an #{@resource.email} geschickt bekommen. Dies ist auch deine Mailadresse für das #{link_to "Anmeldeportal", "https://anmeldung.worldscoutjamboree.de"}.
-Mehr Informationen zum Jamboree findest du auf unserer #{link_to "Homepage", "https://worldscoutjamboree.de"}. 
+%p Alle weiteren Emails werden von uns an #{@resource.email} versendet. Dies ist auch deine Email-Adresse für die Anmeldeplattform (#{link_to "https://jamda.jamboree.at", "https://jamda.jamboree.at"}.). Wenn nötig, kannst du dort deine Email-Adresse ändern. 
 
-%p Wir freuen uns auf dich!
-%p Deine Kontingentsleitung
+%p Mehr Informationen findest du auf unserer Website: #{link_to "https://jamboree.at", "https://jamboree.at"}. 
+
+%p Wir freuen uns auf dich! 
+
+%p Anna, Lisa & Manuel
+%p Kontingentsleitung
+
+%p für das gesamte Kontingentsteam

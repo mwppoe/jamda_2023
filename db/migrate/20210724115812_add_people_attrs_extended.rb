@@ -7,19 +7,20 @@
 
 class AddPeopleAttrsExtended < ActiveRecord::Migration[4.2]
     def change
-      add_column :people, :motivation, :text
+      add_column :people, :phone, :string, :limit => 32
       add_column :people, :languages_spoken, :string
-      add_column :people, :shirt_size, :string
-      add_column :people, :uniform_size, :string
+      add_column :people, :shirt_size, :string, :limit => 5
       add_column :people, :can_swim, :boolean
-      add_column :people, :buddy1_firstname, :string
-      add_column :people, :buddy1_lastname, :string
-      add_column :people, :buddy1_scoutcard, :string
-      add_column :people, :buddy2_firstname, :string
-      add_column :people, :buddy2_lastname, :string
-      add_column :people, :buddy2_scoutcard, :string
-      add_column :people, :buddy3_firstname, :string
-      add_column :people, :buddy3_lastname, :string                  
-      add_column :people, :buddy3_scoutcard, :string                        
+      add_column :people, :size, :smallint
+      add_column :people, :weight, :smallint
+      add_column :people, :buddy1_firstname, :string, :limit => 64
+      add_column :people, :buddy1_lastname, :string, :limit => 64
+      add_column :people, :buddy1_scoutcard, :string, :limit => 32
+      add_column :people, :buddy2_firstname, :string, :limit => 64
+      add_column :people, :buddy2_lastname, :string, :limit => 64
+      add_column :people, :buddy2_scoutcard, :string, :limit => 32
+      add_column :people, :buddy3_firstname, :string, :limit => 64
+      add_column :people, :buddy3_lastname, :string, :limit => 64                
+      add_column :people, :buddy3_scoutcard, :string, :limit => 32                      
     end
 end

@@ -13,13 +13,15 @@ ThinkingSphinx::Index.define_partial :person do
           rdp_association_group,
           additional_contact_name_a,
           additional_contact_adress_a,
+          additional_contact_phone_a,
+          additional_contact_email_a,
+          additional_contact_whatsapp_a,
+          additional_contact_relationship_a,
+          additional_contact_relationship_b,
           additional_contact_name_b,
           additional_contact_adress_b,
-          additional_contact_address_info,
-          sepa_name,
-          sepa_address,
-          sepa_mail,
-          sepa_iban,
-          sepa_bic,
-          sepa_status
+          additional_contact_phone_b,
+          additional_contact_email_b,
+          additional_contact_whatsapp_b,
+          additional_contact_address_info        
 end

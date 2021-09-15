@@ -13,21 +13,11 @@ module FinanceHelper
     # rubocop:disable Metrics/MethodLength
     def payment_array
       [
-        [' ', 'Gesamtbeitrag', 'Dez 21', 'Jan 22', 'Feb 22', 'Mär 22', 'Apr 22', 'Mai 22', 'Jun 22',
-         'Jul 22', 'Aug 22', 'Sep 22', 'Okt 22', 'Nov 22', 'Dez 22', 'Jan 23', 'Feb 23', 'Mär 23',
-         'Apr 23', 'Mai 23'],
-        ['Teilnehmer*in', ' 4.100 € ', ' 150 € ', ' 150 € ', ' 150 € ', ' 150 € ', ' 150 € ',
-         ' 150 € ', ' 150 € ', ' 250 € ', ' 250 € ', ' 250 € ', ' 250 € ', ' 250 € ', ' 300 € ',
-         ' 300 € ', ' 300 € ', ' 300 € ', ' 300 € ', ' 300 € '],
-        ['Patrullenbetreuer*in', ' 3.250 € ', ' 150 € ', ' 150 € ', ' 150 € ', ' 150 € ', ' 150 € ',
-         ' 150 € ', ' 150 € ', ' 200 € ', ' 200 € ', ' 200 € ', ' 200 € ', ' 200 € ', ' 200 € ',
-         ' 250 € ', ' 250 € ', ' 250 € ', ' 250 € ', ' -   € '],
-        ['IST', ' 1.650 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ',
-         ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ',
-         ' 100 € ', ' 100 € ', ' 50 € ', ' -   € '],
-        ['CMT', ' 1.300 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ',
-         ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ', ' 100 € ',
-         ' -   € ', ' -   € ', ' -   € ', ' -   € ', ' -   € ']
+        [' ', 'Gesamtbeitrag', 'bei Anmeldung', 'bis 31.05.2022', 'bis 30.11.2022', 'bis 31.05.2023'],
+        ['Teilnehmer*in', ' 3.520 € ', ' 520 € ', ' 1.000 € ', ' 1.000 € ', ' 1.000 € '],
+        ['Patrullenbetreuer*in', ' 3.520 € ', ' 520 € ', ' 1.000 € ', ' 1.000 € ', ' 1.000 € '],
+        ['IST', ' 1.265 € ', ' 365 € ', ' 300 € ', ' 300 € ', ' 300 € '],
+        ['CMT', ' 3.300 € ', ' 300 € ', ' 1000 € ', ' 1000 € ', ' 1000 € ']
       ]
     end
     # rubocop:enable Metrics/MethodLength
@@ -41,36 +31,37 @@ module FinanceHelper
     end
 
     def role_full_name(role)
-      case role
-      when 'Teilnehmer*in'
-        'Teilnehmer*in einer Unit'
-      when 'Patrullenbetreuer*in'
-        'Patrullenbetreuer*in einer Unit'
-      else
+      #case role
+      # when 'Teilnehmer*in'
+      #  'Teilnehmer*in einer Unit'
+      #when 'Patrullenbetreuer*in'
+      #  'Patrullenbetreuer*in einer Unit'
+      #else
         role
-      end
+      #end
     end
 
     # rubocop:disable Metrics/MethodLength
     def package(role)
       case role
       when 'Teilnehmer*in'
-        'die Vor- und Nachbereitung in Deutschland,'\
-        + ' die Teilnahme an den Akklimatisierungstagen in Südkorea,'\
-        + ' die Teilnahme am 25. World Scout Jamboree in Südkorea,'\
-        + ' die Reise nach Südkorea und eine Vor- oder Nachtour'
+        'die Vor- und Nachbereitung in Österreich,'\
+        + ' Vorprogramm in Südkorea,'\
+        + ' die Kontingentsausrüstung,'\
+        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       when 'Patrullenbetreuer*in'
-        'die Vor- und Nachbereitung in Deutschland,'\
-        + ' die Teilnahme an den Akklimatisierungstagen in Südkorea,'\
-        + ' die Teilnahme am 25. World Scout Jamboree in Südkorea,'\
-        + ' die Reise nach Südkorea und eine Vor- oder Nachtour'
+        'die Vor- und Nachbereitung in Österreich,'\
+        + ' Vorprogramm in Südkorea,'\
+        + ' die Kontingentsausrüstung, '\
+        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       when 'CMT'
-        'die Vor- und Nachbereitung in Deutschland,'\
-        + ' die Teilnahme an den Akklimatisierungstagen in Südkorea und'\
-        + ' die Teilnahme am 25. World Scout Jamboree in Südkorea'
+        'die Vor- und Nachbereitung in Österreich,'\
+        + ' eventuell ein Vorprogramme in Südkorea'\
+        + ' die Kontingentsausrüstung, '\
+        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea,'\
       else
-        'die Vor- und Nachbereitung in Deutschland und'\
-        + ' die Teilnahme am 25. World Scout Jamboree in Südkorea'
+        'die Vor- und Nachbereitung in Österreich und'\
+        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'
       end
     end
     # rubocop:enable Metrics/MethodLength
@@ -79,11 +70,11 @@ module FinanceHelper
     def package_time(role)
       case role
       when 'Teilnehmer*in'
-        '20 bis 25 Tage'
+        '20 Tage'
       when 'Patrullenbetreuer*in'
-        '20 bis 25 Tage'
+        '20 Tage'
       when 'CMT'
-        '13 bis 25 Tage'
+        '15 bis 20 Tage'
       else
         '13 bis 15 Tage'
       end

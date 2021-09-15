@@ -11,6 +11,10 @@
       = t('activerecord.attributes.person.additional_contact_a_info')
   = f.labeled_input_field :additional_contact_name_a 
   = f.labeled_input_field :additional_contact_adress_a, placeholder: t('activerecord.attributes.person.additional_contact_address_info')
+  = f.labeled_input_field :additional_contact_phone_a 
+  = f.labeled_input_field :additional_contact_email_a
+  = f.labeled_input_field :additional_contact_whatsapp_a
+  = f.labeled_input_field :additional_contact_relationship_a
 = field_set_tag do
   %h4
     - if (@person.years.to_i >= 18) 
@@ -19,12 +23,9 @@
       = t('activerecord.attributes.person.additional_contact_b_info')
   = f.labeled_input_field :additional_contact_name_b 
   = f.labeled_input_field :additional_contact_adress_b, placeholder: t('activerecord.attributes.person.additional_contact_address_info')
-  - if (@person.years.to_i < 18)
-    = f.labeled_input_field :additional_contact_single
-= field_set_tag do
-  %h4
-    = t('activerecord.attributes.person.additional_mail_info')
-  = t('activerecord.attributes.person.additional_mail_help')
-  = f.labeled_inline_fields_for :additional_emails, 'contactable/additional_email_fields'
-= field_set_tag do
-  = f.labeled_inline_fields_for :phone_numbers, 'contactable/phone_number_fields'
+  = f.labeled_input_field :additional_contact_phone_b
+  = f.labeled_input_field :additional_contact_email_b
+  = f.labeled_input_field :additional_contact_whatsapp_b
+  = f.labeled_input_field :additional_contact_relationship_b
+-#  - if (@person.years.to_i < 18)
+-#    = f.labeled_input_field :additional_contact_single

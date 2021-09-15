@@ -22,21 +22,6 @@
         = render 'person/upload/button_registration'
       %br
       %br
-      = t('activerecord.attributes.person.upload_sepa_info')
-      %br
-      = f.labeled(:upload_sepa_pdf, t('activerecord.attributes.person.upload_sepa_pdf')) do
-        = f.file_field(:upload_sepa_pdf)
-        = render 'person/upload/button_sepa'
-        %br
-        %br
-      -if(@person.role_wish == "Patrullenbetreuer*in")
-        = t('activerecord.attributes.person.upload_recommondation_info')
-        %br
-        = f.labeled(:upload_recommondation_pdf, t('activerecord.attributes.person.upload_recommondation_pdf')) do
-          = f.file_field(:upload_recommondation_pdf)
-          = render 'person/upload/button_recommondation'
-        %br
-        %br
       -if(@person.role_wish == "Patrullenbetreuer*in" || @person.role_wish == "CMT")
         = t('activerecord.attributes.person.upload_data_processing_info')
         %br
@@ -45,12 +30,6 @@
           = render 'person/upload/button_data_processing'
         %br
         %br
-      -if(@person.role_wish != "Teilnehmer*in")
-        = t('activerecord.attributes.person.upload_good_conduct_info')
-        %br
-        = f.labeled(:upload_good_conduct_pdf, t('activerecord.attributes.person.upload_good_conduct_pdf')) do
-          = f.file_field(:upload_good_conduct_pdf)
-          = render 'person/upload/button_good_conduct'
       %br
       = form_buttons(f, submit_label: 'Dokumente hochladen', cancel_url: person_path(@person))
 

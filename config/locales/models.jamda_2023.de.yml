@@ -77,6 +77,7 @@ de:
     attributes:
       person:
         role: Ich möchte mitfahren als
+        phone: Telefonnummer
         first_name_dummy: Robert
         last_name_dummy: Baden-Powell
         email_dummy: robert.baden-powell@jamboree.at
@@ -88,31 +89,41 @@ de:
         rdp_association_region: Bundesland
         rdp_association_sub_region: Bezirk, Region
         rdp_association_group: Pfadfindergruppe
-        rdp_association_number: Scoutcard ID
+        rdp_association_number: scout.card ID / Mitgliedsnummer
+        rdp_association_info: Deine Mitgliedsnummer findest du auf der Rückseite deiner scout.card
+        rdp_association_sample: 7-232498.JT8
         additional_information: Weitere Infos zu mir
-        additional_contact_a_info: Erziehungsberechtige*r 1
+        additional_contact_a_info: Erziehungsberechtige*r
         additional_contact_a_info_adult: Primärer Notfallkontakt
-        additional_contact_name_a: Vor- und Nachname 
-        additional_contact_adress_a: Adresse 
-        additional_contact_b_info: Erziehungsberechtige*r 2
-        additional_contact_b_info_adult: Sekundärer Notfallkontakt
-        additional_contact_name_b: Vor- und Nachname 
+        additional_contact_name_a: Vor- und Nachname
+        additional_contact_adress_a: Adresse
+        additional_contact_phone_a: Telefonnummer
+        additional_contact_email_a: E-Mail
+        additional_contact_whatsapp_a: WhatsApp
+        additional_contact_relationship_a: Verhältnis zur*m Reisenden
+        additional_contact_relationship_b: Verhältnis zur*m Reisenden                        
+        additional_contact_b_info: Notfallkontakt
+        additional_contact_b_info_adult: Falls nicht erreichbar, ist folgende Person berechtigt, notwendige Entscheidungen zu treffen 
+        additional_contact_name_b: Vor- und Nachname
         additional_contact_adress_b: Adresse 
+        additional_contact_phone_b: Telefonnummer
+        additional_contact_email_b: E-Mail
+        additional_contact_whatsapp_b: WhatsApp             
         additional_contact_single: Es gibt nur eine erziehungsberechtigte Person
         additional_contact_address_info: Sofern abweichend von Kontaktdaten Teilnehmer*in
         additional_mail_info: Weitere E-Mail-Adressen und Telefonummern, um bei Fragen, zur Information oder auch bei Notfällen Kontakt aufzunehmen
         additional_mail_help: Mit "Versand" gekennzeichnete Mails werden zusätzlich zur primären Mailadresse benachrichtigt
         buddies_header: Buddies
-        buddies_info: Hier kannst du bis zu 3 Buddies angeben, mit denen du in einer Unit sein möchstest
+        buddies_info:  Hier kannst du bis zu drei Buddies angeben, mit denen du in der Patrulle sein möchtest. Wir werden bei der Patrulleneinteilung darauf achten, dass jedenfalls einer deiner Buddies mit dir in einer Patrulle ist.
         buddy1_firstname: Buddy 1 Vorname
         buddy1_lastname: Buddy 1 Nachname
-        buddy1_scoutcard: Buddy 1 Scoutcard
+        buddy1_scoutcard: Buddy 1 scout.ID
         buddy2_firstname: Buddy 2 Vorname
         buddy2_lastname: Buddy 2 Nachname
-        buddy2_scoutcard: Buddy 2 Scoutcard
+        buddy2_scoutcard: Buddy 2 scout.ID
         buddy3_firstname: Buddy 3 Vorname
         buddy3_lastname: Buddy 3 Nachname        
-        buddy3_scoutcard: Buddy 3 Scoutcard
+        buddy3_scoutcard: Buddy 3 scout.ID
         sepa_header: Kontaktdaten Kontoinhaber*in
         sepa_info: werden für das SEPA Lastschriftmandat und bei Fragen rund um den Zahlungsverkehr verwendet 
         sepa_name: Kontoinhaber*in
@@ -121,8 +132,29 @@ de:
         sepa_iban: IBAN
         sepa_bic: BIC
         sepa_status: Finanzstatus
-        medicine_header: Gesundheitsdatenblatt
-        medicine_info: Damit die Gesundheit der Teilnehmer*innen auch bei medizinischen Notfällen gewährleistet werden kann, müssen die folgenden Fragen wahrheitsgemäß und vollständig beantwortet werden. Die PPÖ stellen durch technische und organisatorische Maßnahmen sicher, dass der Schutz der nachfolgend erhobenen Gesundheitsdaten gewährleistet wird. Weitere Informationen finden sich in den Hinweisen zur Datenverarbeitung unter 4.4.
+        medicine_header_de: Gesundheitsdatenblatt - österreichisches Kontingent – Jamboree 2023
+        medicine_header_en: Health Form – Austrian Contingent - Jamboree 2023
+        medicine_info: Damit die Gesundheit der Teilnehmer*innen auch bei medizinischen Notfällen gewährleistet werden kann, müssen die folgenden Fragen wahrheitsgemäß und vollständig beantwortet werden. Die PPÖ stellen durch technische und organisatorische Maßnahmen sicher, dass der Schutz der nachfolgend erhobenen Gesundheitsdaten gewährleistet wird.
+        medicine_general: Allgemeines
+        medicine_general_2: Allergien, Krankheiten, Operationen und Medikationen
+        medicine_bloodtype: Blutgruppe, Rhesusfaktor
+        medicine_social_number: eigene SV-Nummer
+        medicine_social_joined: Mitversichert bei
+        medicine_social_joined_number: SV-Nummer (mitversichert)
+        medicine_vaccination_tetanus: Tetanus
+        medicine_vaccination_tetanus_date: Datum
+        medicine_vaccination_fsme: FSME
+        medicine_vaccination_fsme_date: Datum
+        medicine_vaccination_masern: Masern
+        medicine_vaccination_masern_date: Datum
+        medicine_vaccination_meningokokken: Meningokokken
+        medicine_vaccination_meningokokken_date: Datum
+        medicine_vaccination_hepatitisa: Hepatitis A
+        medicine_vaccination_hepatitisa_date: Datum
+        medicine_vaccination_hepatitisb: Hepatitis B
+        medicine_vaccination_hepatitisb_date: Datum
+        medicine_vaccination_covid19: COVID19
+        medicine_vaccination_covid19_date : Datum der letzten COVID-Impfung
         medicine_vaccination: Weitere Schutzimpfungen
         medicine_vaccination_header: Schutzimpfungen
         medicine_vaccination_info: '(z.B. 12/2016 Prorix Mumps Masern Röteln, 04/2019 boostrix Hepatitis B, 05/2019 FSME)' 
@@ -133,31 +165,32 @@ de:
         medicine_stiko_info_link: https://www.bundesgesundheitsministerium.de/themen/praevention/impfungen/schutzimpfungen.html
         medicine_bmi_info: eine Überischt vom RKI findest du im Impfkalender
         medicine_bmi_info_link: https://www.rki.de/DE/Content/Kommissionen/STIKO/Empfehlungen/Aktuelles/Impfkalender.pdf?__blob=publicationFile
-        medicine_preexisting_conditions: Bekannte Vorerkrankungen / Operationen / Kinderkrankheiten
-        medicine_abnormalities: Folgende Auffälligkeiten / Erkrankungen sind bekannt 
-        medicine_abnormalities_info: (z.B. Asthma, Reisekrankheit,Epilepsie, Angststörung,AD(H)S, erhöhter Betreuungsaufwand, etc.)
-        medicine_allergies: Es bestehen folgende Allergien 
+        medicine_preexisting_conditions: Größere Operationen, Knochenbrüche (inkl. Datum)
+        medicine_abnormalities: Chronische Krankheiten
+        medicine_abnormalities_info: (Diabetes, Asthma, Epilepsie, …)
+        medicine_allergies: Allergien 
         medicine_allergies_info: (z.B. gegen Medikamente, nachgewiesene Lebensmittelallergien, Heuschnupfen, etc.) mit folgenden Symptomen
-        medicine_eating_disorders: Es bestehen folgende Essensbesonderheiten (ggf. mit folgenden Symptomen)
-        medicine_mobility_needs: Es bestehen folgende Mobilitätsbedürfnisse auf Grund von
-        medicine_mobility_needs_info: (z.B. benötige Transport bei weiteren strecken / Fußverletzung) 
+        medicine_eating_disorders: Diäten, Nahrungsmittel- unverträglichkeiten
+        medicine_mobility_needs: sportliche Einschränkungen
+        medicine_mobility_needs_info: (gibt es eventuelle Einschränkungen beim Sport) 
         medicine_infectious_diseases: Es besteht zur Zeit eine infektiöse Erkrankung, wenn ja welche
         medicine_medical_treatment_contact: Zur Zeit in ärztlicher Behandlung bei
         medicine_medical_treatment_contact_info: (behandelnder Arzt Facharzt - Name, Kontaktdaten) 
         medicine_medical_treatment_contact_help: Es wird bei Bedarf gestattet, dass sich das ärztliche Team der Kontingentsleitung mit dem genannten med. Fachpersonal in Kontakt setzt, um Gesundheitsdaten / Informationen auzutauschen (Schweigepflichtsentbindung).
-        medicine_continous_medication: Dauermedikation 
+        medicine_continous_medication: Regelmäßige Medikamenteneinnahme 
         medicine_continous_medication_info: (Dosierung / Einnahmeschema / Einnahmegrund)
         medicine_needs_medication: Bedarfsmedikation 
         medicine_needs_medication_info: (Dosierung / Tageshöchstmenge / Einnahmegrund)
         medicine_medication_help: Mit dem Hausarzt ist abzuklären, ob für die bestehende Dauer- & Bedarfsmedikation ein aktueller Medikamentenplan der Medikamente mitgeführt werden muss.
-        medicine_medications_self_treatment: Es werden folgende Medikamente selbstständig eingenommen
-        medicine_other: Es ist auf Folgendes zu achten 
+        medicine_therapies: Psychische oder mentale Erkrankungen bzw. regelmäßige Therapien (ADHS, Depressionen, …)
+        medicine_other: Unverträglichkeiten von Medikamenten  
         medicine_other_info: (z.B. Besonderheiten, Einschränkungen, etc.)
         medicine_important: Das ist noch wichtig
         medicine_case: Im Falle einer Erkrankung oder eines Unfalles, bei denen durch eine Behandlung oder vorläufige Nicht-Behandlung in der Regel keine bleibenden Schäden zu erwarten sind (Bagatellerkrankungen/-verletzungen, Zecke/Splitter entfernen,...) darf unser Kind eigenständig über Behandlungen entscheiden und in medizinische Eingriffe einwilligen, da es die für eine solche Entscheidung notwendige persönliche geistige und körperliche Reife aufweist. Die Versorgung darf auch von Seiten der Betreuung erfolgen.
         medicine_case_doctor: Bei lebensbedrohlichen Erkrankungen / Unfällen entscheidet der behandelnde Arzt vor Ort.
-        medicine_support: Wie kannst du in Stresssituationen unterstützt werden? 
-        medicine_support_info: (Schokolade, Musik, Lieblings-Song, etc)
+        medicine_support: Probleme bei früheren Langstreckenflügen
+        medicine_filled: Ich habe alle Gesundheitsdaten wahrheitsgemäß ausgefüllt
+        medicine_support_info: (Gab es bei früheren (langstrecken Flücgen Probleme? Wenn ja, welche))
         upload_info: Bitte Uploaden.
         upload_info_ready: Vielen Dank für den Upload. Wir überprüfen die hochgeladenen PDFs und geben dir dann Bescheid.
         upload_passport_pdf: Reisepass
@@ -173,7 +206,7 @@ de:
         passport_number_info: z.B. C01X00T47
         passport_austria: Ich besitze einen gültigen österreichischen Reisepass
         passport_valid: Ablaufdatum Reisepass
-        passport_valid_help: Für die Einreise nach Südkorea benötigst du einen Reisepass, der zum Zeitpunkt der Einreise noch mindestens drei Monate gültig ist.
+        passport_valid_help: Für die Einreise nach Südkorea benötigst du einen Reisepass, der für die Dauer des Ausfenthalts gültig ist.
         status: Status der Anmeldung
         unit_keys: Unit Name
         role_wish: Ich möchte mitfahren als 
@@ -185,7 +218,9 @@ de:
         shirt_size_info: z.B. M
         uniform_size: Uniformgröße
         uniform_size_info: z.B. 38 
-        can_swim: Ich kann schwimmen 
+        size: Größe (cm)
+        weight: Gewicht (kg)
+        can_swim: Ich bin geübte*r Schwimmer*in 
         preview_info: Hier kannst du dir ein Vorschau-PDF genererieren, ohne die Anmeldung zu sperren. Dieses bitte nicht zum Upload verwenden. 
         print_info: Hier kannst du deine Anmeldung verbindlich drucken. Nach dem Drucken, werden einige Felder zur Bearbeitung gesperrt. Dieses PDF bitte unterschreiben und bei 'Upload' hochladen.
         printed_info: Du hast deine Anmeldung erfolgreich gedruckt. Hier kannst du sie dir noch einmal herunterladen. Im nächsten Schritt musst du die Anmeldung und weitere Dokumente bei 'Upload' hochladen.
@@ -201,12 +236,12 @@ de:
         check_sepa_info: Bei SEPA abgleichen ob die richtige Unterschrift vorhanden ist
         check_good_conduct_info: Der Nachweis Führungszeugnis darf nicht älter als drei Monate sein und muss für das Jamboree noch gültig sein
         check_good_recommondation_info: Die Empfehlung ist valide und unterschrieben 
-        check_data_processing_info: Die Verschwiegenheitsvereinbarung ist unterschrieben 
-        upload_passport_info: Wenn du keinen Reisepass hast, kannst du auch ein PDF von deinem Personalausweis oder Kinderausweis hochladen. Wir benötigen deinen Ausweis, um Name und Geburtsdatum zu überprüfen. Alle anderen Daten kannst du verdecken.
+        check_data_processing_info: Die Verpflichtungserklärung ist unterschrieben 
+        upload_passport_info: Wenn du keinen Reisepass hast, kannst du auch ein PDF von deinem Personalausweis hochladen. Wir benötigen deinen Ausweis, um Name und Geburtsdatum zu überprüfen. Alle anderen Daten kannst du verdecken.
         upload_registration_info: Die Anmeldung ist die erste Seite deines PDFs.
         upload_sepa_info: Das SEPA Lastschriftmandat ist die zweite Seite deines PDFs.
         upload_recommondation_info: Als Unit Leitung brauchst du eine unterschriebene Empfehlung deines Landesverbands, deiner Diözese.
-        upload_data_processing_info: Du wirst später Teil der Personen sein, die Zugriff auf Daten anderer haben. Daher musst du die Verschwiegenheitsvereinbarung unterschreiben.
+        upload_data_processing_info: Du wirst später Teil der Personen sein, die Zugriff auf Daten anderer haben. Daher musst du die Verpflichtungserklärung, die du gemeinsam mit dem Anmeldungs-PDF herunterlädst, unterschreiben.
         upload_good_conduct_info: Nicht das Führungszeugnis hochladen! Nur den Nachweis deines Verbandes, diesen erhältst du über dein Bundesbüro.
 
 
@@ -235,7 +270,7 @@ de:
       show_passport: Ausweis einsehen
       show_recommondation: Empfehlung einsehen
       show_sepa: SEPA einsehen
-      show_data_processing: Verschwiegenheitsvereinbarung einsehen
+      show_data_processing: Verpflichtungserklärung einsehen
       show_good_conduct: Nachweis Führungszeugnis einsehen
       review_hint: Dokument einsehen
       edit: Bearbeiten
@@ -284,7 +319,7 @@ de:
       additional_contact: Weitere Kontaktdaten
       rdp_association: Gruppenzugehörigkeit
       finance: SEPA
-      medicine: Gesundheitsbogen
+      medicine: Gesundheitsdatenblatt
       buddies: Buddies      
   global:
     tabs:

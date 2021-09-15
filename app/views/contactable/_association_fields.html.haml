@@ -4,9 +4,10 @@
 -#  https://github.com/mwppoe/jamda_2023.
 
 = f.labeled_input_fields :rdp_association, :rdp_association_region
-= f.labeled_input_fields :rdp_association_group, :rdp_association_number
-- if @person.role_wish == 'Teilnehmer*in'
-  = f.labeled_input_field :unit_keys
+= f.labeled_input_fields :rdp_association_group
+= f.labeled_input_fields :rdp_association_number, placeholder: t('activerecord.attributes.person.rdp_association_sample'), help_inline: t('activerecord.attributes.person.rdp_association_info') 
+-# if @person.role_wish == 'Teilnehmer*in'
+  #= f.labeled_input_field :unit_keys
 
 %link{:rel => :stylesheet, :type => :"text/css", :href => "https://rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css"}
 :javascript

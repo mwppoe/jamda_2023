@@ -8,7 +8,7 @@
 class AddPeopleAttrsOrga < ActiveRecord::Migration[4.2]
     def change
       add_column :people, :status, :string, :default => 'registriert'
-      add_column :people, :unit_keys, :string
-      add_column :people, :role_wish, :string
+      add_column :people, :unit_keys, :string,  :limit => 64
+      add_column :people, :role_wish, :string,  :limit => 32
     end
 end

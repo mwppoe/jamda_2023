@@ -70,7 +70,7 @@ module Jamda2023
         + ' ) erhalten je nach Inhalt ihrer Tätigkeit Zugriff'\
         + ' auf personenbezogene Daten der Teilnehmer*innen, soweit dies für die Erfüllung der'\
         + ' ihnen übertragenen Aufgaben erforderlich ist. Rechtsgrundlage ist Art. 6 Abs.'\
-        + ' 1 lit. b DSGVO. Mit den Empfängern ist eine Vertraulichkeitsvereinbarung'\
+        + ' 1 lit. b DSGVO. Mit den Empfängern ist eine Verpflichtungserklärung'\
         + ' abgeschlossen.'
         pdf.move_down 1.mm
         text '3.2 Einzelne personenbezogene Daten werden an Unternehmen und Organisationen'\
@@ -107,7 +107,7 @@ module Jamda2023
         + ' Betreuung oder Behandlung des*der Teilnehmers*Teilnehmerin erforderlich wird; die'\
         + ' Systemadministratoren des Deutschen Kontingents. Rechtsgrundlage sind'\
         + ' Art. 6 Abs. 1 lit. b und d DSGVO. Mit den Empfängern'\
-        + ' ist eine Vertraulichkeitsvereinbarung abgeschlossen.'
+        + ' ist eine Verpflichtungserklärung abgeschlossen.'
         pdf.move_down 1.mm
         text '3.5 Soweit gesundheitsbezogene Daten einzelner Teilnehmer*innen an den'\
         + ' Veranstalter des Jamboree (The Organizing'\
