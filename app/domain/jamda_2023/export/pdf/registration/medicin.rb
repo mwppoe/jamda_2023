@@ -237,8 +237,31 @@ module Jamda2023
         end
 
         pdf.move_down 3.mm
-        text "Körperliche Krankheiten und Besonderheiten / Physical illnesses and restrictions", size: 12
-    
+        text "Krankheiten und Einschränkungen / Illnesses and restrictions", size: 12
+ 
+        pdf.move_down 3.mm
+        text I18n.t('activerecord.attributes.person.medicine_abnormalities'), size: 10
+        text I18n.t('activerecord.attributes.person.medicine_abnormalities_info')
+        text 'Chronic diseases (diabetes, asthma, epilepsy, …):'
+        pdf.move_down 1.mm
+        text (@person.medicine_abnormalities.empty? ?
+          '--' : @person.medicine_abnormalities)
+ 
+        pdf.move_down 3.mm
+        text I18n.t('activerecord.attributes.person.medicine_therapies'), size: 10
+        text 'mental health issues or therapies (ADHD, depression, …)'
+        pdf.move_down 1.mm
+        text (@person.medicine_therapies.nil? ?
+          '--' : @person.medicine_therapies)
+
+        pdf.move_down 3.mm
+        text I18n.t('activerecord.attributes.person.medicine_preexisting_conditions'), size: 10
+        text 'Major operations, bone fractures'
+        pdf.move_down 1.mm
+        text (@person.medicine_preexisting_conditions.empty? ?
+          '--' : @person.medicine_preexisting_conditions)
+             
+
         pdf.move_down 3.mm
         text I18n.t('activerecord.attributes.person.medicine_allergies'), size: 10
         text I18n.t('activerecord.attributes.person.medicine_allergies_info')
@@ -249,38 +272,23 @@ module Jamda2023
           '--' : @person.medicine_allergies)
 
         pdf.move_down 3.mm
-        text I18n.t('activerecord.attributes.person.medicine_other'), size: 10
-        text 'drug incompatibility'
-        pdf.move_down 1.mm
-        text (@person.medicine_other.empty? ? '--' : @person.medicine_other)
-
-        pdf.move_down 3.mm
-        text I18n.t('activerecord.attributes.person.medicine_abnormalities'), size: 10
-        text I18n.t('activerecord.attributes.person.medicine_abnormalities_info')
-        text 'Chronic diseases (diabetes, asthma, epilepsy, …):'
-        pdf.move_down 1.mm
-        text (@person.medicine_abnormalities.empty? ?
-          '--' : @person.medicine_abnormalities)
-            
-        pdf.move_down 3.mm
         text I18n.t('activerecord.attributes.person.medicine_continous_medication'), size: 10
         text I18n.t('activerecord.attributes.person.medicine_continous_medication_info')
         text 'regular medication'
         pdf.move_down 1.mm
         text (@person.medicine_continous_medication.empty? ?
           '--' : @person.medicine_continous_medication)
+              
 
         pdf.move_down 3.mm
-        text I18n.t('activerecord.attributes.person.medicine_preexisting_conditions'), size: 10
-        text 'Major operations, bone fractures'
+        text I18n.t('activerecord.attributes.person.medicine_other'), size: 10
+        text 'drug incompatibility'
         pdf.move_down 1.mm
-        text (@person.medicine_preexisting_conditions.empty? ?
-          '--' : @person.medicine_preexisting_conditions)
-                                                           
- 
-        pdf.move_down 3.mm
+        text (@person.medicine_other.empty? ? '--' : @person.medicine_other)
+                                     
+         pdf.move_down 3.mm
         if @person.can_swim
-          text "Geübter Schwimmer / Good swimmer: ja / yes ", size: 10
+          text "Ich kann schwimmen. / I can swim", size: 10
         end
   
         pdf.move_down 3.mm
@@ -304,16 +312,6 @@ module Jamda2023
         text (@person.medicine_important.nil? ?
           '--' : @person.medicine_important)
   
-        pdf.move_down 3.mm
-        text "Mentale Gesundheit / Mental Health", size: 12
-      
-        pdf.move_down 3.mm
-        text I18n.t('activerecord.attributes.person.medicine_therapies'), size: 10
-        text 'mental health issues or therapies (ADHD, depression, …)'
-        pdf.move_down 1.mm
-        text (@person.medicine_therapies.nil? ?
-          '--' : @person.medicine_therapies)
-      
         pdf.move_down 3.mm      
         text "Wichtige medizinische Hinweise", size: 12
         pdf.move_down 3.mm 

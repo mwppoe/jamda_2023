@@ -34,7 +34,7 @@
     %header.logo
       = link_to(header_logo, root_path, class: 'logo-image')
     %br
-    - if Rails.env.development?
+    - if Rails.env.development2?
       %div{:style => 'width:100%;text-align: center; color: red; background-color: #ffffff'}
         =t('activerecord.header.test_environment')
     

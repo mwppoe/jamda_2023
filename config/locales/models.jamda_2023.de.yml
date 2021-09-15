@@ -153,8 +153,8 @@ de:
         medicine_vaccination_hepatitisa_date: Datum
         medicine_vaccination_hepatitisb: Hepatitis B
         medicine_vaccination_hepatitisb_date: Datum
-        medicine_vaccination_covid19: COVID19
-        medicine_vaccination_covid19_date : Datum der letzten COVID-Impfung
+        medicine_vaccination_covid19: SARS-CoV-2 (Corana)
+        medicine_vaccination_covid19_date : Datum der letzten SARS-CoV-2-Impfung (Corona)
         medicine_vaccination: Weitere Schutzimpfungen
         medicine_vaccination_header: Schutzimpfungen
         medicine_vaccination_info: '(z.B. 12/2016 Prorix Mumps Masern Röteln, 04/2019 boostrix Hepatitis B, 05/2019 FSME)' 
@@ -165,8 +165,8 @@ de:
         medicine_stiko_info_link: https://www.bundesgesundheitsministerium.de/themen/praevention/impfungen/schutzimpfungen.html
         medicine_bmi_info: eine Überischt vom RKI findest du im Impfkalender
         medicine_bmi_info_link: https://www.rki.de/DE/Content/Kommissionen/STIKO/Empfehlungen/Aktuelles/Impfkalender.pdf?__blob=publicationFile
-        medicine_preexisting_conditions: Größere Operationen, Knochenbrüche (inkl. Datum)
-        medicine_abnormalities: Chronische Krankheiten
+        medicine_preexisting_conditions: Große Operationen und schwerere Erkrankungen (inkl. Datum)
+        medicine_abnormalities: Körperliche Krankheiten
         medicine_abnormalities_info: (Diabetes, Asthma, Epilepsie, …)
         medicine_allergies: Allergien 
         medicine_allergies_info: (z.B. gegen Medikamente, nachgewiesene Lebensmittelallergien, Heuschnupfen, etc.) mit folgenden Symptomen
@@ -182,7 +182,7 @@ de:
         medicine_needs_medication: Bedarfsmedikation 
         medicine_needs_medication_info: (Dosierung / Tageshöchstmenge / Einnahmegrund)
         medicine_medication_help: Mit dem Hausarzt ist abzuklären, ob für die bestehende Dauer- & Bedarfsmedikation ein aktueller Medikamentenplan der Medikamente mitgeführt werden muss.
-        medicine_therapies: Psychische oder mentale Erkrankungen bzw. regelmäßige Therapien (ADHS, Depressionen, …)
+        medicine_therapies: Psychische oder mentale Erkrankungen bzw. regelmäßige Therapien und Medikamente (ADHS, Depressionen, …)
         medicine_other: Unverträglichkeiten von Medikamenten  
         medicine_other_info: (z.B. Besonderheiten, Einschränkungen, etc.)
         medicine_important: Das ist noch wichtig
@@ -220,7 +220,7 @@ de:
         uniform_size_info: z.B. 38 
         size: Größe (cm)
         weight: Gewicht (kg)
-        can_swim: Ich bin geübte*r Schwimmer*in 
+        can_swim: Ich kann schwimmen
         preview_info: Hier kannst du dir ein Vorschau-PDF genererieren, ohne die Anmeldung zu sperren. Dieses bitte nicht zum Upload verwenden. 
         print_info: Hier kannst du deine Anmeldung verbindlich drucken. Nach dem Drucken, werden einige Felder zur Bearbeitung gesperrt. Dieses PDF bitte unterschreiben und bei 'Upload' hochladen.
         printed_info: Du hast deine Anmeldung erfolgreich gedruckt. Hier kannst du sie dir noch einmal herunterladen. Im nächsten Schritt musst du die Anmeldung und weitere Dokumente bei 'Upload' hochladen.
