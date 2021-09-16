@@ -34,7 +34,7 @@
     %header.logo
       = link_to(header_logo, root_path, class: 'logo-image')
     %br
-    - if Rails.env.development2?
+    - if Rails.env.development?
       %div{:style => 'width:100%;text-align: center; color: red; background-color: #ffffff'}
         =t('activerecord.header.test_environment')
     
@@ -110,7 +110,7 @@
               = " Dann informiere dich auf "
               = link_to 'https://jamboree.at', 'https://jamboree.at', target: '_blank'
               = " oder schreib uns eine E-Mail an"
-              = mail_to 'units@jamboree.at', 'unit@jamboree.at'
+              = mail_to 'units@jamboree.at', 'units@jamboree.at'
               = " wenn du als Teilnehmer*in / Patrullenbetreuer*in oder an "
               = mail_to 'ist@jamboree.at', 'ist@jamboree.at'
               = " wenn du as IST mitfahren möchtest."
@@ -118,10 +118,10 @@
               = "Du hast Fragen zur Anmeldung:"
               %br/ 
               = " Diese Anleitung führt dich durch den Anmeldeprozess: "
-              = link_to 'jamda.jamboree.at/howto-anmeldung', 'https://jamda.jamboree.at/howto-anmeldung', target: '_blank'
+              = link_to 'https://jamboree.at/how-to-anmeldung/', 'https://jamboree.at/how-to-anmeldung/', target: '_blank'
               %br/ 
               = " Oder vielleicht helfen dier die FAQs weiter:"
-              = link_to 'jamda.jamboree.at/faq-anmeldung', 'https://jamda.jamboree.at/faq-anmeldung', target: '_blank'
+              = link_to 'jhttps://jamboree.at/faq-to-anmeldung/', 'https://jamboree.at/faq-anmeldung/', target: '_blank'
               %br/
             %p
               = "Die Anmeldung zum World Scout Jamboree des österreichischen Kontingents wird ehrenamtlich entwickelt "
