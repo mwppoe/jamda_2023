@@ -79,12 +79,12 @@ module Jamda2023
         pdf.move_down 5.mm
         text 'Überschuss / Unterdeckung', size:12
         pdf.move_down 1.mm
-        text 'Der Teilnahmebeitrag beinhaltet Sicherheiten für Währungsschwankungen und unvorhergesehene Ereignisse. Sollten diese Sicherheiten trotzdem nicht ausreichen, kann auch nachträglich der nötige Differenzbetrag eingefordert werden. Sollte das österreichische Kontingent einen Überschuss aus dem Projekt Jamboree 2023 erwirtschaften, so wird dieser an alle Kontingentsmitglieder refundiert.'
+        text 'Der Teilnahmebeitrag beinhaltet Sicherheiten für Währungsschwankungen und unvorhergesehene Ereignisse. Sollte das österreichische Kontingent einen Überschuss aus dem Projekt Jamboree 2023 erwirtschaften, so wird dieser an alle Kontingentsmitglieder refundiert.'
         pdf.move_down 5.mm
         text 'Foto- und Filmrechte / Verwendung meiner Daten', size:12
         pdf.move_down 1.mm
         text 'Die Foto- bzw. Filmaufnahmen, die im Rahmen der Veranstaltung von mir/meinem Kind erstellt werden, dürfen zum Zwecke der internen und externen Öffentlichkeitsarbeit der Pfadfinder und Pfadfinderinnen Österreichs (PPÖ) verwendet werden. Dies kann Druck- und Onlinemedien innerhalb der PPÖ und der Weltverbände WAGGGS und WOSM beinhalten bzw. externe Medien, die die Arbeit derselben bewerben bzw. darüber berichten. Es wird keinerlei zeitliche und örtliche Beschränkung vereinbart. Die von mir/von meinem Kind zur Verfügung gestellten Daten dürfen an Dritte weitergegeben werden, sofern dies zur Vorbereitung in Österreich und der Reiseorganisation nötig ist.'
-        pdf.move_down 5.mm
+        pdf.move_down 7.mm
         text 'Storno/Reiserücktritt - COVID-19', size:12
         text 'Wir weisen darauf hin, dass der Teilnahmebetrag keine Storno- bzw. Reiserücktrittsversicherung umfasst. Auch ein Projektausfall aufgrund von COVID bzw. anderer nicht vorhersehbarer Ereignisse ist nicht versichert. Aus den Erfahrungen letzter Veranstaltungen empfehlen wird dringend jedem/jeder Mitreisenden, privat eine Storno- und Reiserücktrittsversicherung abzuschließen. In Bezug auf Corona gelten die vom Gastgeberland zum Zeitpunkt der Einreise vorgegebenen Bestimmungen. Wenn aufgrund persönlicher Einstellungen diese nicht akzeptiert werden können, ist auch dahingehend keine Versicherung inkludiert. Genauere Informationen können über care@jamboree.at eingeholt werden.'
    
