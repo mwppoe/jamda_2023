@@ -23,7 +23,7 @@
           = render_attrs(@person, :additional_contact_name_a, :additional_contact_name_b, :additional_contact_single) 
         %h5
           = t('activerecord.attributes.person.check_sepa_info')
-        = render_attrs(@person, :sepa_name)
+        -# = render_attrs(@person, :sepa_name)
         - if (@person.years.to_i > 18)
           %h5
             = t('activerecord.attributes.person.check_good_conduct_info')
@@ -59,12 +59,12 @@
         = form_buttons(f, submit_label: 'Kontaktdaten Ändern ändern')
       %h4
         = t('activerecord.attributes.person.check_finance_info')
-      = standard_form(@person, {url: check_group_person_path,  method: :put}) do |f|
-        = f.labeled_input_fields :sepa_name,
-                    :sepa_address,
-                    :sepa_mail,
-                    :sepa_iban,
-                    :sepa_bic
+      -# = standard_form(@person, {url: check_group_person_path,  method: :put}) do |f|
+      -#   = f.labeled_input_fields :sepa_name,
+      -#               :sepa_address,
+      -#               :sepa_mail,
+      -#               :sepa_iban,
+      -#               :sepa_bic
         = form_buttons(f, submit_label: 'gesperrte Felder ändern')
       %h4
         = t('activerecord.attributes.person.check_status_info')
