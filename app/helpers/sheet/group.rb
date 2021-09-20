@@ -21,7 +21,8 @@ module Sheet
         :simple_group_events_path,
         params: { returning: true },
         if: (lambda do |_view, _group|
-          true
+          # Deactivate Anlässe / Events
+          false
           # view.current_user.role?('Group::Root::Admin')
           # TODO: use view.can
           # group.event_types.include?(::Event) &&
