@@ -6,5 +6,5 @@
 #  https://github.com/mwppoe/jamda_2023.
 
 class JamboreeMailer < ApplicationMailer
-  default from: 'jamda@jamboree.at'
+  default from: 'jamda@ppoe.at'
 end
