@@ -5,6 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/mwppoe/jamda_2023.
 
-class JamboreeMailer < ActionMailer::Base
+class JamboreeMailer < ApplicationMailer
   default from: 'jamda@jamboree.at'
 end
