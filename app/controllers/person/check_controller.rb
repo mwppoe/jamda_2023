@@ -79,7 +79,7 @@ class Person::CheckController < ApplicationController
 
   def cmt_check
     if params[:url] == 'cmt_review'
-      @person.status = 'in Überprüfung durch KT'
+      @person.status = 'in Überprüfung durch CMT'
     end
   end
 
