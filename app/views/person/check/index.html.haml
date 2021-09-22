@@ -42,7 +42,7 @@
           = t('activerecord.attributes.person.check_next_state_participant_info')
         - if 'Upload vollständig' == @person.status
           = render 'person/check/button_cmt_review', f: f
-        - if 'in Überprüfung durch KT' == @person.status
+        - if 'in Überprüfung durch CMT' == @person.status
           = render 'person/check/button_cmt_documents', f: f   
         - if 'Dokumente vollständig überprüft' == @person.status
           = t('activerecord.attributes.person.check_next_state_unit_info')
