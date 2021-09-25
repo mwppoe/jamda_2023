@@ -216,6 +216,8 @@ de:
         languages_spoken_info: z.B. Deutsch (Muttersprache), Englisch (5 Jahre Schule) 
         shirt_size: T-Shirt Größe
         shirt_size_info: z.B. M
+        skills: Über dich
+        skills_info: z.B. Ich kann gut Gitarrespielen, Ich kann Origami falten, ... 
         uniform_size: Uniformgröße
         uniform_size_info: z.B. 38 
         size: Größe (cm)

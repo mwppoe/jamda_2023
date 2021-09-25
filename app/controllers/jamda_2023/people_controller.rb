@@ -90,6 +90,7 @@ module Jamda2023
         :languages_spoken,
         :shirt_size,
         :size,
+        :skills,
         :weight
       ]
 

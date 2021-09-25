@@ -33,6 +33,7 @@ module Jamda2023::PersonSerializer
                      :passport_austria,
                      :passport_valid,
                      :status,
+                     :skills,
                      :unit_keys,
                      :role_wish,
                      :languages_spoken,
