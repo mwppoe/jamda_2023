@@ -153,7 +153,7 @@ de:
         medicine_vaccination_hepatitisa_date: Datum
         medicine_vaccination_hepatitisb: Hepatitis B
         medicine_vaccination_hepatitisb_date: Datum
-        medicine_vaccination_covid19: SARS-CoV-2 (Corana)
+        medicine_vaccination_covid19: SARS-CoV-2 (Corona)
         medicine_vaccination_covid19_date : Datum der letzten SARS-CoV-2-Impfung (Corona)
         medicine_vaccination: Weitere Schutzimpfungen
         medicine_vaccination_header: Schutzimpfungen
@@ -216,6 +216,8 @@ de:
         languages_spoken_info: z.B. Deutsch (Muttersprache), Englisch (5 Jahre Schule) 
         shirt_size: T-Shirt Größe
         shirt_size_info: z.B. M
+        skills: Über dich
+        skills_info: z.B. Ich kann gut Gitarrespielen, Ich kann Origami falten, ... 
         uniform_size: Uniformgröße
         uniform_size_info: z.B. 38 
         size: Größe (cm)
@@ -243,6 +245,8 @@ de:
         upload_recommondation_info: Als Unit Leitung brauchst du eine unterschriebene Empfehlung deines Landesverbands, deiner Diözese.
         upload_data_processing_info: Du wirst später Teil der Personen sein, die Zugriff auf Daten anderer haben. Daher musst du die Verpflichtungserklärung, die du gemeinsam mit dem Anmeldungs-PDF herunterlädst, unterschreiben.
         upload_good_conduct_info: Nicht das Führungszeugnis hochladen! Nur den Nachweis deines Verbandes, diesen erhältst du über dein Bundesbüro.
+        jamboreepayment_header: Zahlungen 
+        jamboreepayment_info: 'Du hast bereits folgende Zahlungen erbracht:'
 
 
         genders:
@@ -255,6 +259,7 @@ de:
       registration_header: Für die Anmeldung zum Worldscoutjamboree hier registrieren
       map: Kontingentskarte 
       statistic: Statistik
+      uploadfinance: Upload von Buchhaltungsexport
       test_environment: Testumgebung, Daten können jederzeit gelöscht werden!
       additional_contact_header: Notfallkontakte
       additional_contact_header_participant: Sorgeberechtigte
@@ -314,6 +319,7 @@ de:
       additional_contact: Weitere Kontaktdaten
       check: Teilnehmerdaten überprüfen
       upload: Upload
+      jamboreepayment: Zahlungen      
     form_tabs:
       general: Kontaktdaten Teilnehmer*in
       additional_contact: Weitere Kontaktdaten
@@ -321,6 +327,7 @@ de:
       finance: SEPA
       medicine: Gesundheitsdatenblatt
       buddies: Buddies      
+
   global:
     tabs:
       info: Kontaktdaten

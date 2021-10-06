@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     get '/map', to: "map#index"
     get '/statistic', to: "statistic#index"
 
+
     resources :groups do
       resources :people, except: [:new, :create] do
         member do
@@ -40,9 +41,10 @@ Rails.application.routes.draw do
           get 'upload/show_good_conduct' => 'person/upload#show_good_conduct'
           get 'upload/show_sepa' => 'person/upload#show_sepa'
           get 'upload/show_data_processing' => 'person/upload#show_data_processing'
-
+          get 'jamboreepayment' => 'person/jamboreepayment#index'
         end 
       end 
     end
+    
   end
 end

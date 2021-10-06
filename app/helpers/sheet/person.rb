@@ -14,13 +14,16 @@ module Sheet
         :group_person_path,
         if: :show
 
-
     tab 'people.tabs.print',
         :print_group_person_path,
         if: :show
 
     tab 'people.tabs.upload',
         :upload_group_person_path,
+        if: :show
+
+    tab 'people.tabs.jamboreepayment',
+        :jamboreepayment_group_person_path,
         if: :show
 
     tab 'people.tabs.check',

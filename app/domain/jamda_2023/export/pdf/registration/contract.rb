@@ -85,7 +85,7 @@ module Jamda2023
         text ' für das österreichische Kontingent zum 25. World Scout Jamboree 2023 in Südkorea.'
 
         pdf.move_down 3.mm
-        text "Die Teilnahme als '#{role_full_name(@person.role_wish)}', "\
+        text "Die Teilnahme als '#{role_full_name(@person.role_wish)}' "\
         + "im österreichischen Kontingent kostet #{payment_value(@person.role_wish)} und"\
         " beinhaltet #{package(@person.role_wish)}."
         text 'Die Reise ist für den Zeitraum vom 25.07 bis 13.08.2023'\
