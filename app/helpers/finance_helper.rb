@@ -46,21 +46,21 @@ module FinanceHelper
       case role
       when 'Teilnehmer*in'
         'die Vor- und Nachbereitung in Österreich,'\
-        + ' Vorprogramm in Südkorea,'\
-        + ' die Kontingentsausrüstung,'\
+        + ' das Vorprogramm in Südkorea,'\
+        + ' die Kontingentsausrüstung'\
         + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       when 'Patrullenbetreuer*in'
         'die Vor- und Nachbereitung in Österreich,'\
-        + ' Vorprogramm in Südkorea,'\
-        + ' die Kontingentsausrüstung, '\
+        + ' das Vorprogramm in Südkorea,'\
+        + ' die Kontingentsausrüstung '\
         + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       when 'CMT'
         'die Vor- und Nachbereitung in Österreich,'\
-        + ' eventuell ein Vorprogramme in Südkorea'\
+        + ' das Vorprogramm in Südkorea (wenn du nicht daran teilnimmst, wird es natürlich abgezogen), '\
         + ' die Kontingentsausrüstung, '\
-        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea,'\
+        + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       else
-        'die Vor- und Nachbereitung in Österreich und'\
+        'die Vor- und Nachbereitung in Österreich'\
         + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'
       end
     end

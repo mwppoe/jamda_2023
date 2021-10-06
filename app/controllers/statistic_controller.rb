@@ -14,6 +14,7 @@ class StatisticController < ApplicationController
     # TODO: CanCan
     @access = current_user.role?('Group::Root::Admin') ||
               current_user.role?('Group::Root::Leader') ||
+              current_user.role?('Group::UnitSupport::Member') ||              
               current_user.role?('Group::UnitSupport::Leader') ||
               current_user.role?('Group::UnitSupport::Member')
 
@@ -26,7 +27,7 @@ class StatisticController < ApplicationController
   end
 
   def registered_person
-    start_date = Date.parse('2021-05-15')
+    start_date = Date.parse('2021-09-13')
     end_date = Date.today
     @total = {}
     @ist = {}
