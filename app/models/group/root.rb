@@ -23,6 +23,11 @@ class Group::Root < ::Group
     self.permissions = [:layer_and_below_full]
   end
 
+  class Dataadmin < ::Role
+    self.permissions = [:layer_and_below_full]
+  end
+
+
   class Member < ::Role
     self.permissions = []
   end
@@ -31,6 +36,6 @@ class Group::Root < ::Group
     self.permissions = []
   end
 
-  roles Admin, Leader, Member, Unassigned
+  roles Admin, Leader, Member, Dataadmin, Unassigned
 
 end
