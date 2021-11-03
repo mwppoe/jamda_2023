@@ -19,6 +19,9 @@ de:
       group/root/leader:
         one: HoC
         description: HoC
+      group/root/dataadmin:
+        one: Daten Admin
+        description: Daten Admin
       group/root/member:
         one: CMT
         description: CMT Mitglieder.
@@ -99,7 +102,7 @@ de:
         additional_contact_adress_a: Adresse
         additional_contact_phone_a: Telefonnummer
         additional_contact_email_a: E-Mail
-        additional_contact_whatsapp_a: WhatsApp
+        additional_contact_whatsapp_a: Per WhatsApp erreichbar
         additional_contact_relationship_a: Verhältnis zur*m Reisenden
         additional_contact_relationship_b: Verhältnis zur*m Reisenden                        
         additional_contact_b_info: Notfallkontakt
@@ -108,7 +111,7 @@ de:
         additional_contact_adress_b: Adresse 
         additional_contact_phone_b: Telefonnummer
         additional_contact_email_b: E-Mail
-        additional_contact_whatsapp_b: WhatsApp             
+        additional_contact_whatsapp_b: Per WhatsApp erreichbar
         additional_contact_single: Es gibt nur eine erziehungsberechtigte Person
         additional_contact_address_info: Sofern abweichend von Kontaktdaten Teilnehmer*in
         additional_mail_info: Weitere E-Mail-Adressen und Telefonummern, um bei Fragen, zur Information oder auch bei Notfällen Kontakt aufzunehmen
