@@ -334,7 +334,7 @@ module Jamda2023
         signature.draw
         pdf.move_down 3.mm
 
-        text 'Für Rückfragen erreicht ihr uns unter '\
+        text 'Für Rückfragen zum Gesundheitsdatenblatt erreicht ihr uns unter '\
         + %(<link href="mailto:care@jamboree.at">care@jamboree.at.</link>), :inline_format => true
       end
     end

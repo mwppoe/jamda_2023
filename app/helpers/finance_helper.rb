@@ -56,8 +56,8 @@ module FinanceHelper
         + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       when 'CMT'
         'die Vor- und Nachbereitung in Österreich,'\
-        + ' das Vorprogramm in Südkorea (wenn du nicht daran teilnimmst, wird es natürlich abgezogen), '\
-        + ' die Kontingentsausrüstung, '\
+        + ' das Vorprogramm in Südkorea (wenn du nicht daran teilnimmst, wird es natürlich abgezogen),'\
+        + ' die Kontingentsausrüstung,'\
         + ' und die Teilnahme am 25. World Scout Jamboree in Südkorea'\
       else
         'die Vor- und Nachbereitung in Österreich'\
