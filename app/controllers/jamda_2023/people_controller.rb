@@ -14,6 +14,7 @@ module Jamda2023
         :rdp_association_region,
         :rdp_association_group,
         :rdp_association_number,
+        :airport,
         :additional_contact_name_a,
         :additional_contact_adress_a,
         :additional_contact_phone_a,
@@ -98,11 +99,23 @@ module Jamda2023
       # Display a form to edit an exisiting entry of this model.
       #   GET /entries/1/edit
       def edit(&block)
+
+        @manage = manage
         @rdp_groups = YAML.load_file(Rails.root.join('' \
                                     '../hitobito_jamda_2023/config/ppoe_groups.yml'))[Rails.env]
-
+        @possible_airports = Settings.person.airports
         respond_with(entry, &block)
       end
+
+      def manage
+        current_user.role?('Group::Root::Admin') ||
+        current_user.role?('Group::Root::Leader') ||
+        current_user.role?('Group::Root::Dataadmin') ||        
+        current_user.role?('Group::UnitSupport::Leader') ||
+        current_user.role?('Group::UnitSupport::Member') ||
+        current_user.role?('Group::Ist::Leader')
+      end
+
     end
   end
 end

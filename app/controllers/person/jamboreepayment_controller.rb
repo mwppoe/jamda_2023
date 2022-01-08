@@ -50,7 +50,7 @@ class Person::JamboreepaymentController < ApplicationController
       @paymententries += 'Es wurden noch keine Zahlungen verbucht!' + "\n"
     end  
      @paymententries += 'Es fehlen noch ' + (fullamount-sum).to_s + '€ auf den vollen Betrag.'
-     @paymententries += "\n" + "\n" + "\n" + 'Überweisungen werden in der Regel einmal in der Woche vom Jamboree-Konto in die Jamda übertragen.'
+     @paymententries += "\n" + "\n" + "\n" + 'Überweisungen werden in der Regel am 2. und am 16. des Monats vom Jamboree-Konto in die Jamda übertragen.'
   end
 
   private

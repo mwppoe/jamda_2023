@@ -50,6 +50,10 @@ person:
     - Abmeldung Vermerkt # Personen die sich abmelden wollen, bei denen es noch Klärungsbedarf gibt
     - abgemeldet # Alle die nicht mehr am Jamboree Teilnehmen wollen
 
+  airports:
+    -
+    - NON
+
 
 addresses:
   imported_countries:
