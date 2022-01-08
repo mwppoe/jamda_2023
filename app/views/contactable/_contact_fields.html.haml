@@ -32,6 +32,11 @@
   = f.labeled_input_field :passport_austria
   = f.labeled_input_field :passport_valid, help_inline: t('activerecord.attributes.person.passport_valid_help')
 
+- if (@manage)
+  = field_set_tag do 
+    = f.labeled_collection_select(:airport, @possible_airports, :to_s, :to_s, {}, class: 'span2')
+    = t('activerecord.attributes.person.airport_info')
+
 = field_set_tag do 
   = f.labeled_input_field :shirt_size, placeholder: t('activerecord.attributes.person.shirt_size_info')
 
