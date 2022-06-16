@@ -97,6 +97,13 @@ de:
         rdp_association_sample: 7-232498.JT8
         airport: Abflug Flughafen
         airport_info: NON wenn kein Flug über das Kontingent benötigt wird
+        add_good_1: zusätzliches rotes T-Shirt (20€)
+        add_good_2: zusätzliches graues T-Shirt (20€)
+        add_good_3: zusätzliches Halstuch (10€)
+        add_good_1_info: z.B. 2
+        add_good_2_info: z.B. 1
+        add_good_3_info: z.B. 5
+        add_good_timeline: Du kannst bis zum 24.6.2022 hier zusätzliche T-Shirts und Halstücher bestellen
         additional_information: Weitere Infos zu mir
         additional_contact_a_info: Erziehungsberechtige*r
         additional_contact_a_info_adult: Primärer Notfallkontakt
