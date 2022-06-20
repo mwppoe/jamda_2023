@@ -18,6 +18,8 @@ module Jamda2023
         :add_good_1,
         :add_good_2,
         :add_good_3,                
+        :add_good_4,                
+        :add_good_5,                                
         :additional_contact_name_a,
         :additional_contact_adress_a,
         :additional_contact_phone_a,
