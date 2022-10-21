@@ -16,6 +16,7 @@ class StatisticController < ApplicationController
               current_user.role?('Group::Root::Leader') ||
               current_user.role?('Group::UnitSupport::Member') ||              
               current_user.role?('Group::UnitSupport::Leader') ||
+              current_user.role?('Group::Root::Dataadmin') ||
               current_user.role?('Group::UnitSupport::Member')
 
     unless @access
