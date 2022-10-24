@@ -19,7 +19,7 @@ if ($_POST['password'] == $data_password) {
         }
 
 
-	$sql = "select people.id as pid, last_name, first_name, rdp_association_number, town, zip_code, rdp_association_region, airport, birthday, shirt_size, role_wish from people where id > 1 order by last_name, first_name;";
+	$sql = "select people.id as pid, status, last_name, first_name, rdp_association_number, town, zip_code, rdp_association_region, airport, birthday, shirt_size, role_wish, add_good_1, add_good_2, add_good_3, add_good_4 from people where id > 1 order by last_name, first_name;";
         $r = mysqli_query($conn, $sql);
 
 
@@ -28,7 +28,8 @@ if ($_POST['password'] == $data_password) {
 
       fputcsv($handle, array(
                 trim('JAMDA ID'),
-                trim('Nachname'),
+		trim('Status'),
+		trim('Nachname'),
                 trim('Vorname'),
                 trim('Scoutcard-ID'),
                 trim('Stadt'),
@@ -37,7 +38,11 @@ if ($_POST['password'] == $data_password) {
 		trim('Flughafen'),
                 trim('Geburtsdatum'),
 		trim('T-Shirt'),
-                trim('Rolle')
+		trim('Rolle'),
+		trim('extra r. TS'),
+		trim('extra g. TS'),
+		trim('extra HT'),
+		trim('extra HTK')
                 ), ";");
 
 	while ($row = mysqli_fetch_assoc($r))
