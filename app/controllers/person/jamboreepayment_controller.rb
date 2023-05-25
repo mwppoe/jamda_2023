@@ -36,6 +36,23 @@ class Person::JamboreepaymentController < ApplicationController
       fullamount = 3300
     end
 
+    zusatz = 0
+    temp = (@person.add_good_1).to_i*20
+    zusatz +=temp.to_i
+
+    temp = (@person.add_good_2).to_i*20
+    zusatz +=temp.to_i
+
+    temp = (@person.add_good_3).to_i*10
+    zusatz +=temp.to_i
+
+    temp = (@person.add_good_4).to_i*5
+    zusatz +=temp.to_i
+
+    temp = (@person.add_good_5).to_i
+    zusatz +=temp.to_i
+
+    fullamount += zusatz
 
     jamboreepayment.each do |payment|
       @paymententries += count.to_s + '. Zahlung (' + payment.booking_date.to_s + '):' + "\n"
@@ -49,7 +66,7 @@ class Person::JamboreepaymentController < ApplicationController
     else
       @paymententries += 'Es wurden noch keine Zahlungen verbucht!' + "\n"
     end  
-     @paymententries += 'Es fehlen noch ' + (fullamount-sum).to_s + '€ auf den vollen Betrag.'
+     @paymententries += 'Es fehlen noch ' + (fullamount-sum).to_s + '€ auf den vollen Betrag. (' + (zusatz).to_s + ' € durch Zusatzbestellungen)'
      @paymententries += "\n" + "\n" + "\n" + 'Überweisungen werden in der Regel am 2. und am 16. des Monats vom Jamboree-Konto in die Jamda übertragen.'
   end
 
