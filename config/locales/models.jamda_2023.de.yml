@@ -95,8 +95,8 @@ de:
         rdp_association_number: scout.card ID / Mitgliedsnummer
         rdp_association_info: Deine Mitgliedsnummer findest du auf der Rückseite deiner scout.card
         rdp_association_sample: 7-232498.JT8
-        airport: Abflug Flughafen
-        airport_info: NON wenn kein Flug über das Kontingent benötigt wird
+        airport: Flug
+        airport_info: Hier wird der Jamboree Flug angezeigt
         add_good_1: zusätzliches rotes T-Shirt (20€)
         add_good_2: zusätzliches graues T-Shirt (20€)
         add_good_3: zusätzliches Halstuch (10€)
