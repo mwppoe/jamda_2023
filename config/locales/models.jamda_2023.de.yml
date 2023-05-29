@@ -214,8 +214,10 @@ de:
         upload_registration_pdf: Anmeldung
         generated_registration_pdf: Generierte Anmeldung
         upload_sepa_pdf: SEPA
-        upload_recommondation_pdf: Empfehlung
-        upload_good_conduct_pdf: Nachweis Führungszeugnis
+        upload_recommondation_pdf: Impfpass
+        upload_recommondation_pdf_info: Bitte hier deinen Impfpass hochladen
+        upload_good_conduct_pdf: Einverständniserklärung
+        upload_good_conduct_pdf_info: Einverständniserklärung für Minderjährige bei Reisen ohne Sorgeberechtigte
         passport_nationality: Nationalität
         passport_nationality_info: z.B. Österreich
         passport_number: Reisepassnummer
@@ -289,10 +291,10 @@ de:
       show_registration: Anmeldung einsehen
       show_registration_generated: Generierte Anmeldung herunterladen
       show_passport: Ausweis einsehen
-      show_recommondation: Empfehlung einsehen
+      show_recommondation: Impfpass herunterladen
       show_sepa: SEPA einsehen
       show_data_processing: Verpflichtungserklärung einsehen
-      show_good_conduct: Nachweis Führungszeugnis einsehen
+      show_good_conduct: Einverständniserklärung für Jugendliche einsehen
       review_hint: Dokument einsehen
       edit: Bearbeiten
       edit_hint: Zum Bearbeiten öffnen 
