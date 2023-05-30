@@ -29,7 +29,7 @@ module Sheet
     tab 'people.tabs.jamboreeflight',
         :jamboreeflight_group_person_path,
         if: (lambda do |_view, _group, person|
-          person.nickname?
+          person.airport?
         end)
   
 
