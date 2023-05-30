@@ -26,6 +26,13 @@ module Sheet
         :jamboreepayment_group_person_path,
         if: :show
 
+    tab 'people.tabs.jamboreeflight',
+        :jamboreeflight_group_person_path,
+        if: (lambda do |_view, _group, person|
+          person.nickname?
+        end)
+  
+
     tab 'people.tabs.check',
         :check_group_person_path,
         if: (lambda do |view, _group, _person|
