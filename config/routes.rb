@@ -42,6 +42,7 @@ Rails.application.routes.draw do
           get 'upload/show_sepa' => 'person/upload#show_sepa'
           get 'upload/show_data_processing' => 'person/upload#show_data_processing'
           get 'jamboreepayment' => 'person/jamboreepayment#index'
+          get 'jamboreeflight' => 'person/jamboreeflight#index'          
         end 
       end 
     end

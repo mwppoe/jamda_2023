@@ -265,6 +265,9 @@ de:
         upload_good_conduct_info: Nicht das Führungszeugnis hochladen! Nur den Nachweis deines Verbandes, diesen erhältst du über dein Bundesbüro.
         jamboreepayment_header: Zahlungen 
         jamboreepayment_info: 'Du hast bereits folgende Zahlungen erbracht:'
+        jamboreeflight_header: Flüge
+        jamboreeflight_info: 'Das sind deine Flüge:'
+
 
 
         genders:
@@ -338,6 +341,7 @@ de:
       check: Teilnehmerdaten überprüfen
       upload: Upload
       jamboreepayment: Zahlungen      
+      jamboreeflight: Flüge
     form_tabs:
       general: Kontaktdaten Teilnehmer*in
       additional_contact: Weitere Kontaktdaten
