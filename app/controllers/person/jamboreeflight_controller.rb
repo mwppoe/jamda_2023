@@ -84,7 +84,7 @@ class Person::JamboreeflightController < ApplicationController
     27AUG TAIPEI TPE 1 - VIENNA VIE CI 063 23:20 06:30+ R OK"
 
 
-    case @person.nickname
+    case @person.airport
     when "F01"
       @flighttext = @jf1
     when "F02"
