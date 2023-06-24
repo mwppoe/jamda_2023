@@ -213,11 +213,12 @@ de:
         upload_data_processing_pdf: Vereinbarung
         upload_registration_pdf: Anmeldung
         generated_registration_pdf: Generierte Anmeldung
-        upload_sepa_pdf: SEPA
+        upload_sepa_pdf: Obsorgevollmacht/Power of Attorney
+        upload_sepa_pdf_info: Inklussive Kopie der Geburtsurkunde und Reisepasses eines*r Erziehungsberechtigten. Mehrere PDFs kannst du hier zu einem zusammenfügen https://www.adobe.com/de/acrobat/online/merge-pdf.html 
         upload_recommondation_pdf: Impfpass
         upload_recommondation_pdf_info: Bitte hier deinen Impfpass hochladen
-        upload_good_conduct_pdf: Einverständniserklärung
-        upload_good_conduct_pdf_info: Einverständniserklärung für Minderjährige bei Reisen ohne Sorgeberechtigte
+        upload_good_conduct_pdf: Minor Travel Consent Form
+        #upload_good_conduct_pdf_info: Einverständniserklärung für Minderjährige bei Reisen ohne Sorgeberechtigte
         passport_nationality: Nationalität
         passport_nationality_info: z.B. Österreich
         passport_number: Reisepassnummer
@@ -295,9 +296,9 @@ de:
       show_registration_generated: Generierte Anmeldung herunterladen
       show_passport: Ausweis einsehen
       show_recommondation: Impfpass herunterladen
-      show_sepa: SEPA einsehen
+      show_sepa: Obsorgevollmacht/Power of Attorney
       show_data_processing: Verpflichtungserklärung einsehen
-      show_good_conduct: Einverständniserklärung für Jugendliche einsehen
+      show_good_conduct: Minor Travel Consent Form einsehen
       review_hint: Dokument einsehen
       edit: Bearbeiten
       edit_hint: Zum Bearbeiten öffnen 
