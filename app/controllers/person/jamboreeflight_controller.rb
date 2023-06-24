@@ -83,6 +83,11 @@ class Person::JamboreeflightController < ApplicationController
     27AUG SEOUL ICN 2 - TAIPEI TPE CI 163 20:45 22:20 R OK
     27AUG TAIPEI TPE 1 - VIENNA VIE CI 063 23:20 06:30+ R OK"
 
+    @jf14 = "27.07.2023  MUCICN   15:55 - 09:55 (+1)   LH0718
+    16.08.2023   ICNMUC   11:40 - 17:50   LH0719"
+
+    
+
 
     case @person.airport
     when "F01"
@@ -111,6 +116,8 @@ class Person::JamboreeflightController < ApplicationController
       @flighttext = @jf12     
     when "F13"
       @flighttext = @jf13     
+    when "F14"
+      @flighttext = @jf14
     end  
     # flash[:alert] = params[:url]
 

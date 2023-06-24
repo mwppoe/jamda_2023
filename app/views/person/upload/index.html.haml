@@ -38,11 +38,16 @@
       %br
       %br
       -if(@person.role_wish == "Teilnehmer*in")
-        = t('activerecord.attributes.person.upload_good_conduct_pdf_info')
         %br
         = f.labeled(:upload_minor_travel_pdf, t('activerecord.attributes.person.upload_good_conduct_pdf')) do
           = f.file_field(:upload_good_conduct_pdf)
           = render 'person/upload/button_good_conduct'
+        %br
+        %br
+        = f.labeled(:upload_power_of_attorney_pdf, t('activerecord.attributes.person.upload_sepa_pdf')) do
+          = f.file_field(:upload_sepa_pdf)
+          = render 'person/upload/button_sepa'
+        = t('activerecord.attributes.person.upload_sepa_pdf_info')          
         %br
         %br
       %br
